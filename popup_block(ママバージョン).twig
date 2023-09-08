@@ -32,6 +32,12 @@
 .banner-close::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+#floating-banner.is-show {
+	visibility: visible;
+}
+#floating-banner {
+	visibility: hidden;
+}
 @media screen and (min-width: 1200px) {
   .banner-close {
     cursor: pointer;
@@ -46,9 +52,6 @@ window.addEventListener("scroll", function () {
 
     banner.style.top = bannerTopPosition + scrollY + "px";
 });
-
-</script>
-<script>
 document.addEventListener("DOMContentLoaded", function () {
   const closeButton = document.querySelector(".banner-close");
   const banner = document.getElementById("floating-banner");
@@ -57,6 +60,18 @@ document.addEventListener("DOMContentLoaded", function () {
     banner.style.display = "none";
   });
 });
+const keyName = 'loadingviewed';
+const keyValue = true;
+
+if (!sessionStorage.getItem(keyName)) {
+    sessionStorage.setItem(keyName, keyValue);
+// 初回閲覧時
+window.onload = function() {
+  var popup = document.getElementById('floating-banner');
+  if(!popup) return;
+  popup.classList.add('is-show');
+}
+} 
 </script>
 <div id="floating-banner">
 {% set request_path = app.request.getPathInfo() %}
@@ -67,3 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
   <button class="banner-close"></button>
   <a href="https://youtu.be/mKWVP0AyZuw?si=naKDocyIqrf-N09b"><img src="{{ app.config.user_data_urlpath }}/ceralabo/popup/line_2.jpg"/></a> </div>
 {% endif %}
+
+
+
