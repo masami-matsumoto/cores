@@ -1,0 +1,69 @@
+<!-- ここにブロックのコンテンツを記述 -->
+<style type="text/css">
+#floating-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  display: block;
+}
+.banner-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #fff;
+}
+.banner-close::before, .banner-close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 0.1em;
+  background: #333;
+}
+.banner-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.banner-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+@media screen and (min-width: 1200px) {
+  .banner-close {
+    cursor: pointer;
+  }
+}
+</style>
+<script>
+window.addEventListener("scroll", function () {
+    var banner = document.getElementById("floating-banner");
+    var scrollY = window.scrollY || window.pageYOffset;
+    var bannerTopPosition = 20; // バナーの上部からの初期位置
+
+    banner.style.top = bannerTopPosition + scrollY + "px";
+});
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const closeButton = document.querySelector(".banner-close");
+  const banner = document.getElementById("floating-banner");
+
+  closeButton.addEventListener("click", function () {
+    banner.style.display = "none";
+  });
+});
+</script>
+<div id="floating-banner">
+{% set request_path = app.request.getPathInfo() %}
+{% if request_path == '/ceralabo/products/detail/314' or request_path == '/ceralabo/products/detail/311' %}
+  <button class="banner-close"></button>
+  <a href="https://stg.cores-ec.site/ceralabo/"><img src="{{ app.config.user_data_urlpath }}/ceralabo/popup/line_1.jpg"/></a> </div>
+{% elseif request_path == '/ceralabo/products/detail/266' %}
+  <button class="banner-close"></button>
+  <a href="https://youtu.be/mKWVP0AyZuw?si=naKDocyIqrf-N09b"><img src="{{ app.config.user_data_urlpath }}/ceralabo/popup/line_2.jpg"/></a> </div>
+{% endif %}

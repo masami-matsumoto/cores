@@ -1,0 +1,171 @@
+{#
+This file is part of EC-CUBE
+
+Copyright(c) 2000-2015 LOCKON CO.,LTD. All Rights Reserved.
+
+http://www.lockon.co.jp/
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#}
+{% extends 'default_frame.twig' %}
+
+{% set body_class = 'front_page' %}
+
+{% block javascript %}
+<script>
+    $(function() {
+        $('.main_visual').slick({
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            speed: 300
+        });
+    });
+</script>
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="ceralabo_top_slide">
+        <div class="main_visual">
+
+{# 1番目 #}
+	<div class="item">
+                <a href="https://cores-ec.site/ceralabo/products/detail/249">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_sensitive_milk_pc.jpg" class="ceralabo_pc" alt="セラキュア センシティブミルク">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_sensitive_milk_sp.jpg" class="ceralabo_pc_none" alt="セラキュア センシティブミルク">
+                </a>
+            </div>
+            {# 2番目 #}
+	<div class="item">
+                <a href="https://cores-ec.site/ceralabo/products/detail/250">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_shine_drip_renewal_pc.jpg" class="ceralabo_pc" alt="シャインドリップ（リニューアル品）">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_shine_drip_renewal_sp.jpg" class="ceralabo_pc_none" alt="シャインドリップ（リニューアル品）">
+                </a>
+            </div>
+{# 3番目 #}
+	<div class="item">
+                <a href="https://cores-ec.site/ceralabo/products/detail/237">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_skinwashclear_pc2.jpg" class="ceralabo_pc" alt="スキンウォッシュクリアリー">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_skinwashclear_sp2.jpg" class="ceralabo_pc_none" alt="スキンウォッシュクリアリー">
+                </a>
+            </div>
+
+
+
+
+            {# 4番目 #}
+			<div class="item">
+                <a href="https://cores-ec.site/ceralabo/products/detail/203">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_trial_select_pc.jpg" class="ceralabo_pc" alt="セララボ選べるトライアルセット">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_trial_select_sp.jpg" class="ceralabo_pc_none" alt="セララボ選べるトライアルセット">
+                </a>
+            </div>
+
+             {# 5番目 #}
+<div class="item">
+                <a href="https://cores-ec.site/ceralabo/user_data/topics27">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_drip_pc_re02.jpg" class="ceralabo_pc" alt="セララボ初 薬用美白美容液">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_drip_sp_re02.jpg" class="ceralabo_pc_none" alt="セララボ初 薬用美白美容液">
+                </a>
+            </div>
+
+
+
+{# 
+<div class="item">
+                <a href="https://cores-ec.site/ceralabo/products/detail/229">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/230426_motherscard_pc.png" class="ceralabo_pc" alt="母の日メッセージカード">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/230426_motherscard_sp.png" class="ceralabo_pc_none" alt="母の日メッセージカード">
+                </a>
+            </div>
+   #}
+
+
+               {# 6番目 #}              
+               <div class="item">
+                <a href="https://cores-ec.site/ceralabo/products/list?category_id=14">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_2207renewal.png" class="ceralabo_pc" alt="新処方">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_2207renewal_sp.png" class="ceralabo_pc_none" alt="新処方">
+                </a>
+            </div>
+            {# 7番目 #}            
+            <div class="item">
+                <a href="{{ url(app.config.user_data_route, {'route': 'topics11'}) }}">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_topics11.jpg" class="ceralabo_pc" alt="エイジングケア">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_topics11_sp.jpg" class="ceralabo_pc_none" alt="エイジングケア">
+                </a>
+            </div>
+
+
+
+            {# 8番目 #}
+            <div class="item">
+                <a href="https://cores-ec.site/ceralabo/products/detail/145">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_2206_jerry.png" class="ceralabo_pc" alt="センシティブジェリー">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_2206_jerry_sp.png" class="ceralabo_pc_none" alt="センシティブジェリー">
+                </a>
+            </div>
+
+            {# 9番目 #}
+            <div class="item">
+                <a href="{{ url(app.config.user_data_route, {'route': 'topics17'}) }}">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_topics17.png" class="ceralabo_pc" alt="日焼け止め">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_topics17_sp.png" class="ceralabo_pc_none" alt="日焼け止め">
+                </a>
+            </div>
+
+
+
+
+            {# 10番目 #}
+            <div class="item">
+                <a href="{{ url(app.config.user_data_route, {'route': 'topics01'}) }}">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_mv_02.png" class="ceralabo_pc" alt="開発秘話">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_mv_02_sp.png" class="ceralabo_pc_none" alt="CeraLabo">
+                </a>
+            </div>
+
+
+
+            {# 11番目 #}
+            <div class="item">
+                <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_mv_05.png" class="ceralabo_pc" alt="送料無料">
+                <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_mv_05_sp.png" class="ceralabo_pc_none" alt="送料無料">
+            </div>
+            {# 12番目 #}
+            <div class="item">
+                <a href="https://line.me/R/ti/p/%40762wsdbu" target="_blank">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_211202_line.png" class="ceralabo_pc" alt="line">
+                    <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_top/banner/img_top_211202_line_sp.png" class="ceralabo_pc_none" alt="line">
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
