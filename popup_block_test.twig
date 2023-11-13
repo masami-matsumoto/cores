@@ -1,6 +1,7 @@
 <!-- ここにブロックのコンテンツを記述 -->
 <style type="text/css">
     #floating-banner {
+      width:150px;
       position: fixed;
       z-index: 999;
       display: none; /* 最初は非表示に設定 */
@@ -10,8 +11,8 @@
       top: 0;
       right: 0;
       z-index: 9999;
-      width: 30px;
-      height: 30px;
+      width: 15px;
+      height: 15px;
       border: none;
       background-color: #fff;
     }
@@ -21,7 +22,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 2em;
+      width: 1em;
       height: 0.1em;
       background: #333;
     }
@@ -38,7 +39,7 @@
     /* PC用のスタイル */
 @media screen and (min-width: 1200px) {
   #floating-banner {
-    top: 95px; /* PCの場合のトップ位置 */
+    top: 0px; /* PCの場合のトップ位置 */
     right: 20px; /* PCの場合の右位置 */
   }
   .banner-close {
@@ -49,7 +50,7 @@
 /* SP用のスタイル */
 @media screen and (max-width: 1199px) {
   #floating-banner {
-    top: 210px; /* SPの場合の下部からの位置 */
+    top: 0px; /* SPの場合の下部からの位置 */
     right: 10px; /* SPの場合の右位置 */
   }
 }
@@ -75,7 +76,14 @@
   
     /* スクロール時の処理 */
 var banner = document.getElementById("floating-banner");
-var bannerTopPosition = 100; // バナーの上部からの初期位置
+var bannerTopPosition; // バナーの上部からの初期位置
+
+// メディアクエリを使用してPCとSPで異なる位置を設定
+if (window.innerWidth >= 780) { // PC用の条件
+  bannerTopPosition = 10; // PCの場合の位置
+} else {
+  bannerTopPosition = 50; // SPの場合の位置
+}
 
 window.addEventListener("scroll", function () {
   var scrollY = window.scrollY || window.pageYOffset;
@@ -91,11 +99,11 @@ if (banner) {
   </script>
   <div id="floating-banner">
     {% set request_path = app.request.getPathInfo() %}
-    {% if request_path == '/ceralabo/products/detail/314' or request_path == '/ceralabo/products/detail/266' %}
+    {% if request_path == '/ceralabo/products/detail/255' %}
       <button class="banner-close"></button>
-      <a href="https://lin.ee/RMpAC6W" target="_blank"><img src="{{ app.config.user_data_urlpath }}/ceralabo/popup/10.png"/></a>
-    {% elseif request_path == '/ceralabo/products/detail/311' %}
+      <a href="" target="_blank"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_popup/banner_s.png"/></a>
+    {% elseif request_path == '/ceralabo/products/detail/256' %}
       <button class="banner-close"></button>
-      <a href="https://lin.ee/RMpAC6W" target="_blank"><img src="{{ app.config.user_data_urlpath }}/ceralabo/popup/11.png"/></a>
+      <a href="" target="_blank"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_popup/banner_v.png"/></a>
     {% endif %}
   </div>

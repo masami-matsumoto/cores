@@ -1,0 +1,945 @@
+{% extends 'default_frame.twig' %}
+{% block main %}
+<div id="main">
+    <div id="main_middle">
+        <div id="contents" class="main_only">
+            <div class="container-fluid inner no-padding">
+                <div id="main">
+                    <div class="container-fluid no-padding">
+                        <div class="ceralabo_shopList_container">
+
+                            <h1 class="ceralabo_ttl_main">
+                                Shop List
+                            </h1>
+                            <p class="ceralabo_ttl_main_sml">取扱い店舗</p>
+
+                            <ul class="ceralabo_shopList_areaList">
+                                <li><a href="#Hokkaido" data-smoothScroll>北海道</a></li>
+                                <li><a href="#Tohoku" data-smoothScroll>東北</a></li>
+                                <li><a href="#Kanto" data-smoothScroll>関東</a></li>
+                                <li><a href="#Chubu" data-smoothScroll>中部</a></li>
+                                <li><a href="#Kansai" data-smoothScroll>関西</a></li>
+                                <li><a href="#ChugokuShikoku" data-smoothScroll>中国・四国</a></li>
+                                <li><a href="#KyushuOkinawa" data-smoothScroll>九州・沖縄</a></li>
+                            </ul>
+
+                            {# ▼ ---- 北海道エリア ---- ▼ #}
+                            <div id="Hokkaido" class="ceralabo_shopList_areaSection">
+                                <h2 class="ceralabo_ttl_sub">北海道エリア</h2>
+                                <ul class="ceralabo_shopList_shopGroup">
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_hokkaido_tsutayaEbetsu.jpg" alt="江別 蔦屋書店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>江別 蔦屋書店</h3>
+                                            <p>
+                                                〒067-0005<br>
+                                                北海道江別市牧場町14番地の1<br>
+                                                &phone; 011-375-6688<br>
+                                                <a href="https://ebetsu-t.com/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_hokkaido_tokyuHandsSapporo.jpg" alt=" ハンズ 札幌店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 札幌店</h3>
+                                            <p>
+                                                〒060-0061<br>
+                                                北海道札幌市中央区北4条西2丁目<br>
+                                                さっぽろ東急百貨店8・9階（一部）<br>
+                                                &phone; 011-218-6111<br>
+                                                <a href="https://sapporo.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                                <p class="ceralabo_btn_pageTop_wrap">
+                                    <a href="#" class="ceralabo_btn_pageTop" data-smoothScroll>Page Top <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/icon_doubleArrow.svg" alt="矢印"></a>
+                                </p>
+                            </div>
+                            {# ▲ ---- 北海道エリア ---- ▲ #}
+
+                            {# ▼ ---- 東北エリア ---- ▼ #}
+                            <div id="Tohoku" class="ceralabo_shopList_areaSection">
+                                <h2 class="ceralabo_ttl_sub">東北エリア</h2>
+                                <ul class="ceralabo_shopList_shopGroup">
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_tohoku_tokyuHandsSendai.jpg" alt="ハンズ 仙台店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 仙台店</h3>
+                                            <p>
+                                                〒980-0021<br>
+                                                宮城県仙台市青葉区中央1-1-1<br>
+                                                エスパル仙台東館4F<br>
+                                                &phone; 022-791-0109<br>
+                                                <a href="https://sendai.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                                <p class="ceralabo_btn_pageTop_wrap">
+                                    <a href="#" class="ceralabo_btn_pageTop" data-smoothScroll>Page Top <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/icon_doubleArrow.svg" alt="矢印"></a>
+                                </p>
+                            </div>
+                            {# ▲ ---- 東北エリア ---- ▲ #}
+
+                            {# ▼ ---- 関東エリア ---- ▼ #}
+                            <div id="Kanto" class="ceralabo_shopList_areaSection">
+                                <h2 class="ceralabo_ttl_sub">関東エリア</h2>
+                                <ul class="ceralabo_shopList_shopGroup">
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kanto_tokyuHandsOmiya.jpg" alt="ハンズ 大宮店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 大宮店</h3>
+                                            <p>
+                                                〒330-0854<br>
+                                                埼玉県さいたま市大宮区桜木町2-3<br>
+                                                DOMショッピングセンター 4・5F<br>
+                                                &phone; 048-640-7111<br>
+                                                <a href="https://omiya.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kanto_tsutayaNakameguro.jpg" alt="中目黒 蔦屋書店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>中目黒 蔦屋書店</h3>
+                                            <p>
+                                                〒153-0051<br>
+                                                東京都目黒区上目黒1-22-10<br>
+                                                &phone; 03-6303-0940<br>
+                                                <a href="https://store.tsite.jp/nakameguro/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kanto_tokyuHandsShinjuku.jpg" alt="ハンズ 新宿店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 新宿店</h3>
+                                            <p>
+                                                〒151-0051<br>
+                                                東京都渋谷区千駄ヶ谷5-24-2<br>
+                                                タイムズスクエアビル2～8F<br>
+                                                &phone; 03-5361-3111<br>
+                                                <a href="https://shinjuku.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kanto_tokyuHandsShibuya.jpg" alt="ハンズ 渋谷店 店舗画像" class="ceralabo_shopList_shopGroup_imgBox_vertical">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 渋谷店</h3>
+                                            <p>
+                                                〒150-0042<br>
+                                                東京都渋谷区宇田川町12-18<br>
+                                                &phone; 03-5489-5111<br>
+                                                <a href="https://shibuya.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kanto_tokyuHandsGinza.jpg" alt="ハンズ 銀座店 店舗画像" class="ceralabo_shopList_shopGroup_imgBox_vertical">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 銀座店</h3>
+                                            <p>
+                                                〒104-0061<br>
+                                                東京都中央区銀座2-2-14<br>
+                                                マロニエゲート銀座1 5～9F<br>
+                                                &phone; 03-3538-0109<br>
+                                                <a href="https://ginza.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    {# 
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/roppongi.jpg">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>六本木蔦屋書店</h3>
+                                            <p>
+                                                〒106-0032<br>
+                                                東京都港区六本木6－11－1<br>
+                                                六本木ヒルズ 六本木けやき坂通り<br>
+                                                &phone; 03-5775-1515<br>
+                                                <a href="https://store.tsite.jp/roppongi/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    #}
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kanto_tokyuHandsMachida.jpg" alt="ハンズ 町田店 店舗画像" class="ceralabo_shopList_shopGroup_imgBox_vertical">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 町田店</h3>
+                                            <p>
+                                                〒194-0013<br>
+                                                東京都町田市原町田6-4-1<br>
+                                                町田東急ツインズ イースト6･7F<br>
+                                                &phone; 042-728-2511<br>
+                                                <a href="https://machida.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/shimokita_bookstore.jpg">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>TSUTAYA　BOOKSTORE下北沢</h3>
+                                            <p>
+                                                〒155-0031<br>
+                                                東京都世田谷区北沢２丁目１１番１５号<br>
+                                                &phone; 03-6778-4039<br>
+                                                {# 
+                                                <a href="https://nagasaki.tokyu-hands.co.jp" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                                #}
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/futakotamagawa_tsutaya.jpg">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>二子玉川 蔦屋家電</h3>
+                                            <p>
+                                                〒158-0094<br>
+                                                東京都世田谷区玉川1丁目14番1号<br>
+                                                二子玉川ライズ S.C. テラスマーケット<br>
+                                                &phone; 03-5491-8550<br>
+                                                <a href="https://store.tsite.jp/futakotamagawa/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a><br>
+                                                <br>
+                                                <span style="font-size:0.8em;">※こちらの店舗はセラネージュシリーズのお取り扱いはございません。</span><br>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/ebisu_tsutaya.jpeg">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>TSUTAYA BOOKSTORE 恵比寿ガーデンプレイス</h3>
+                                            <p>
+                                                〒150-6090<br>
+                                                東京都東京都渋谷区恵比寿四丁目２０番７号<br>
+                                                &phone; 03-3280-6390<br>
+                                                <a href="https://gardenplace.jp/shop/detail.php?id=357" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/marunouchi_tsutaya.jpeg">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>TSUTAYA BOOKSTORE MARUNOUCHI</h3>
+                                            <p>
+                                                〒100-6303<br>
+                                                東京都渋谷区千代田区丸の内２丁目４番１号<br>
+                                                丸の内ビルディング4F<br>
+                                                &phone; 03-6206-3767<br>
+                                                <a href="https://www.marunouchi.com/tenants/10312/index.html" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kanto_tokyuHandsYokohama.jpg" alt="ハンズ 横浜店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 横浜店</h3>
+                                            <p>
+                                                〒220-0005<br>
+                                                神奈川県横浜市西区南幸1-3-1<br>
+                                                横浜モアーズ5～7F<br>
+                                                &phone; 045-320-0109<br>
+                                                <a href="https://yokohama.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/atrekawasaki.jpg" alt="ハンズ アトレ川﨑店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ アトレ川﨑店</h3>
+                                            <p>
+                                                〒210-0007<br>
+                                                神奈川県川崎市川崎区駅前本町26-1<br>
+                                                アトレ川崎4F<br>
+                                                &phone; 044-221-0109<br>
+                                                <a href="https://atrekawasaki.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/ebina_tsutaya.jpeg" alt="TSUTAYA BOOKSTORE 海老名店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>TSUTAYA BOOKSTORE 海老名店</h3>
+                                            <p>
+                                                〒243-0438<br>
+                                                神奈川県海老名市めぐみ町3-1<br>
+                                                ViNA GARDENS PERCH 4F<br>
+                                                &phone; 046-206-5210<br>
+                                                <a href="https://vinagardens.com/post-shop/post-shop-196/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    {# 
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kanto_tokyuHandsChiba.jpeg" alt="ハンズ 千葉店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 千葉店</h3>
+                                            <p>
+                                                〒260-0031<br>
+                                                千葉県千葉市中央区新千葉1-1-1<br>
+                                                ペリエ千葉6F<br>
+                                                &phone; 043-308-0109<br>
+                                                <a href="https://chiba.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    #}
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kanto_tokyuHandsKashiwa.jpg" alt="ハンズ 柏店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 柏店</h3>
+                                            <p>
+                                                〒277-0842<br>
+                                                千葉県柏市末広町1-1柏高島屋<br>
+                                                ステーションモール S館専門店7・8F<br>
+                                                &phone; 04-7141-6111<br>
+                                                <a href="https://kashiwa.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kanto_tsutayamakuhari.jpg" alt="幕張 蔦屋書店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>幕張 蔦屋書店</h3>
+                                            <p>
+                                                〒261-8535<br>
+                                                千葉県 千葉市美浜区 豊砂1-1<br>
+                                                イオンモール幕張新都心グランドモール1階<br>                                           
+                                                &phone; 043-306-7361<br>
+                                                <a href="https://tsutaya.tsite.jp/store/detail/1548/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                                <p class="ceralabo_btn_pageTop_wrap">
+                                    <a href="#" class="ceralabo_btn_pageTop" data-smoothScroll>Page Top <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/icon_doubleArrow.svg" alt="矢印"></a>
+                                </p>
+                            </div>
+                            {# ▲ ---- 関東エリア ---- ▲ #}
+
+                            {# ▼ ---- 中部エリア ---- ▼ #}
+                            <div id="Chubu" class="ceralabo_shopList_areaSection">
+                                <h2 class="ceralabo_ttl_sub">中部エリア</h2>
+                                <ul class="ceralabo_shopList_shopGroup">
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_chubu_tsutayaKakitagawa.jpg" alt="TSUTAYA BOOKSTORE サントムーン柿田川店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>TSUTAYA BOOKSTORE<br>サントムーン柿田川店</h3>
+                                            <p>
+                                                〒411-0907<br>
+                                                静岡県駿東郡清水町伏見52-7 1F<br>
+                                                &phone; 055-928-6402<br>
+                                                <a href="https://store-tsutaya.tsite.jp/storelocator/detail/4162.html" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_chubu_tsutayaNagoya.jpg" alt="名古屋みなと 蔦屋書店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>名古屋みなと 蔦屋書店</h3>
+                                            <p>
+                                                〒455-8501<br>
+                                                愛知県名古屋市港区港明2-3-2<br>
+                                                ららぽーと名古屋みなとアクルス<br>
+                                                &phone; 052-387-6800<br>
+                                                <a href="https://store.tsite.jp/nagoya-minato/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_chubu_tsutayaHakuyouseto.jpg" alt="TSUTAYA いまじん白揚瀬戸店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>TSUTAYA<br>いまじん白揚瀬戸店</h3>
+                                            <p>
+                                                〒489-0971<br>
+                                                愛知県瀬戸市西本地町2丁目222番地1<br>
+                                                &phone; 0561-97-3655<br>
+                                                <a href="https://store-tsutaya.tsite.jp/storelocator/detail/4467.html" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_chubu_tsutayaHakuyoukasugai.jpg" alt="TSUTAYA いまじん白揚春日井店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>TSUTAYA<br>いまじん白揚春日井店</h3>
+                                            <p>
+                                                〒486-0917<br>
+                                                愛知県春日井市美濃町2丁目3番地<br>
+                                                &phone; 0568-35-5900<br>
+                                                <a href="https://store-tsutaya.tsite.jp/storelocator/detail/4468.html" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_chubu_tokyuHandsKanazawa.jpg" alt="ハンズ 金沢店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 金沢店</h3>
+                                            <p>
+                                                〒920-0961<br>
+                                                石川県金沢市香林坊2-1-1<br>
+                                                香林坊東急スクエアGF<br>
+                                                &phone; 076-221-0109<br>
+                                                <a href="https://kanazawa.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_chubu_tsutayaShinbo.jpg" alt="TSUTAYA BOOK STORE ワイプラザ新保店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>TSUTAYA BOOK STORE<br>ワイプラザ新保店</h3>
+                                            <p>
+                                                〒910-0838<br>
+                                                福井県福井市新保北1丁目303 A館 2F<br>
+                                                &phone; 0776-91-1901<br>
+                                                <a href="https://store-tsutaya.tsite.jp/storelocator/detail/3515.html" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                                <p class="ceralabo_btn_pageTop_wrap">
+                                    <a href="#" class="ceralabo_btn_pageTop" data-smoothScroll>Page Top <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/icon_doubleArrow.svg" alt="矢印"></a>
+                                </p>
+                            </div>
+                            {# ▲ ---- 中部エリア ---- ▲ #}
+
+                            {# ▼ ---- 関西エリア ---- ▼ #}
+                            <div id="Kansai" class="ceralabo_shopList_areaSection">
+                                <h2 class="ceralabo_ttl_sub">関西エリア</h2>
+                                <ul class="ceralabo_shopList_shopGroup">
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kansai_tsutayaUmeda.jpg" alt="梅田 蔦屋書店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>梅田 蔦屋書店</h3>
+                                            <p>
+                                                〒530-8558<br>
+                                                大阪市北区梅田3-1-3 ルクア イーレ9F<br>
+                                                &phone; 06-4799-1800<br>
+                                                <a href="https://store.tsite.jp/umeda/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    {# 
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/hirakata.jpg" alt="枚方">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>HIRAKATA T-SITE　枚方蔦屋書店</h3>
+                                            <p>
+                                                〒573-0032<br>
+                                                大阪府枚方市岡東町12-2<br>
+                                                &phone; 072-861-5700<br>
+                                                <a href="https://store.tsite.jp/hirakata/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    #}
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kansai_tokyuHandsKyoto.jpg" alt="ハンズ 京都店 店舗画像" class="ceralabo_shopList_shopGroup_imgBox_vertical">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 京都店</h3>
+                                            <p>
+                                                〒600-8008<br>
+                                                京都府京都市下京区<br>
+                                                四条烏丸東入長刀鉾町27番地<br>
+                                                大丸京都店周辺店舗<br>
+                                                &phone; 075-254-3109<br>
+                                                <a href="https://kyoto.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+
+                                    {# 
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/nara_hanz.jpg" alt="ハンズ 奈良">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 奈良店</h3>
+                                            <p>
+                                                期間：2月1日(火)～28日(月)
+                                            </p>
+                                            <p>
+                                                〒631-0821<br>
+                                                奈良県奈良市西大寺東町２丁目４−１<br>
+                                                近鉄百貨店奈良店 5F<br>
+                                                &phone; 0742-30-3005<br>
+                                                <a href="https://nara.tokyu-hands.co.jp" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    #}
+
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kansai_plugsMarketKusatsu.jpg" alt="プラグス マーケット 草津店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>プラグス マーケット<br>草津店</h3>
+                                            <p>
+                                                〒525-8515<br>
+                                                滋賀県草津市渋川1-1-50<br>
+                                                近鉄百貨店 草津店2階<br>
+                                                &phone; 077-598-0107<br>
+                                                <a href="https://www.tokyu-hands.co.jp/plugs-market/kusatsu/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    {# 
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/img_shop_kosaka.jpg" alt="ハンズ江坂店">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ江坂店</h3>
+                                            <p>
+                                                大阪府吹田市豊津町9-40<br>
+                                                &phone; 06-6338-6161<br>
+                                                <a href="https://esaka.tokyu-hands.co.jp" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    #}
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/img_shinsaibashi.png">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ心斎橋店</h3>
+                                            <p>〒542-0085<br>
+                                                大阪府大阪市中央区心斎橋筋1-8-3心斎橋パルコ 9～11階<br>
+                                                &phone; 06-6243-3111<br>
+                                                <a href="https://shinsaibashi.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/img_kuwana.jpg">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ桑名店</h3>
+                                            <p>〒511-0863<br>
+                                                三重県桑名市新西方1-22イオンモール桑名 3F<br>
+                                                &phone; 0594-23-0109<br>
+                                                <a href="https://kuwana.tokyu-hands.co.jp" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/sakai_tsutaya.jpeg" alt="ハンズ 京都店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>TSUTAYA BOOKSTORE ららぽーと堺</h3>
+                                            <p>
+                                                〒587-8577<br>
+                                                大阪府堺市美原区黒山22番1 1階<br>
+                                                &phone; 072-349-4026<br>
+                                                <a href="https://mitsui-shopping-park.com/lalaport/sakai/shopguide/2270374.html" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+<li>
+                      <div class="ceralabo_shopList_shopGroup_imgBox"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/abeno_hands.jpg" alt="あべのキューズモール店舗画像"> </div>
+                      <div class="ceralabo_shopList_shopGroup_textBox">
+                        <h3>ハンズ あべのキューズモール店</h3>
+                        <p> 〒545-0052<br>
+                          大阪府大阪市阿倍野区阿倍野筋1-6-1 あべのキューズモールB1F<br>
+                          &phone; 06-6645-0109<br>
+                          <a href="https://abeno.hands.net/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a> </p>
+                      </div>
+                    </li>
+
+
+
+
+
+
+                                </ul>
+                                <p class="ceralabo_btn_pageTop_wrap">
+                                    <a href="#" class="ceralabo_btn_pageTop" data-smoothScroll>Page Top <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/icon_doubleArrow.svg" alt="矢印"></a>
+                                </p>
+                            </div>
+                            {# ▲ ---- 関西エリア ---- ▲ #}
+
+                            {# ▼ ---- 中国・四国エリア ---- ▼ #}
+                            <div id="ChugokuShikoku" class="ceralabo_shopList_areaSection">
+                                <h2 class="ceralabo_ttl_sub">中国・四国エリア</h2>
+                                <ul class="ceralabo_shopList_shopGroup">
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_chugokuSikoku_hiroshimaTsite.jpg" alt="広島 T-SITE 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>広島 T-SITE</h3>
+                                            <p>
+                                                〒733-0831<br>
+                                                広島県広島市西区扇2丁目1-45<br>
+                                                &phone; 082-501-5000<br>
+                                                <a href="https://store.tsite.jp/hiroshima/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_chugokuSikoku_tsutayaEdion.jpg" alt="エディオン 蔦屋家電 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>エディオン 蔦屋家電</h3>
+                                            <p>
+                                                〒732-0822<br>
+                                                広島県広島市南区松原町3番1-1号<br>
+                                                EKICITY HIROSHIMA 1階-3階<br>
+                                                &phone; 082-264-6511<br>
+                                                <a href="https://edion-tsutaya-electrics.jp/hiroshima/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_chugokuSikoku_tsutayaKochi.jpg" alt="高知 蔦屋書店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>高知 蔦屋書店</h3>
+                                            <p>
+                                                〒780-0084<br>
+                                                高知県高知市南御座6-10<br>
+                                                &phone; 088-882-5544<br>
+                                                <a href="https://store.tsite.jp/kochi/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_chugokuSikoku_tbs_okayama.png" alt="TSUTAYA　BOOKSTORE岡山駅前店">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>TSUTAYA BOOKSTORE岡山駅前店</h3>
+                                            <p>
+                                                〒700-0023<br>
+                                                岡山県 岡山市北区 駅前町1丁目8番18号<br>
+                                                イコットニコット2F<br>
+                                                &phone; 086-238-3535<br>
+                                                <a href="https://store-tsutaya.tsite.jp/store/detail?storeId=6443" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+<li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_hands_matsuyama.jpg" alt="ハンズ松山店">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ松山店</h3>
+                                            <p>
+                                                〒790-0012<br>
+                                                愛媛県松山市湊町5-1-1　いよてつ髙島屋本館7階<br>
+                                                &phone; 089-946-0109 <br>
+                                                <a href="https://matsuyama.hands.net/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                                <p class="ceralabo_btn_pageTop_wrap">
+                                    <a href="#" class="ceralabo_btn_pageTop" data-smoothScroll>Page Top <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/icon_doubleArrow.svg" alt="矢印"></a>
+                                </p>
+                            </div>
+                            {# ▲ ---- 中部・四国エリア ---- ▲ #}
+
+                            {# ▼ ---- 九州・沖縄エリア ---- ▼ #}
+                            <div id="KyushuOkinawa" class="ceralabo_shopList_areaSection">
+                                <h2 class="ceralabo_ttl_sub">九州・沖縄エリア</h2>
+                                <ul class="ceralabo_shopList_shopGroup">
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kyushuOkinawa_tsutayaRopponmatsu.jpg" alt="六本松 蔦屋書店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>六本松 蔦屋書店</h3>
+                                            <p>
+                                                〒810-0044<br>
+                                                福岡県福岡市中央区六本松4-2-1<br>
+                                                六本松421 2F<br>
+                                                &phone; 092-731-7760<br>
+                                                <a href="https://store.tsite.jp/ropponmatsu/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kyushuOkinawa_tokyuHandsHakata.jpg" alt="ハンズ 博多店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 博多店</h3>
+                                            <p>
+                                                〒812-0012<br>
+                                                福岡県福岡市博多区博多駅中央街1-1<br>
+                                                JR博多シティ1～5F<br>
+                                                &phone; 092-481-3109<br>
+                                                <a href="https://hakata.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    
+                                    
+
+                                    {# 
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/nagasaki_hanz.jpg" alt="ハンズ長崎">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ長崎店</h3>
+                                            <p>
+                                                長崎県長崎市尾上町1-1アミュプラザ長崎4F<br>
+                                                &phone; 095-816-0109<br>
+                                                <a href="https://nagasaki.tokyu-hands.co.jp" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    #}
+
+
+
+                                    {# 
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/img_hanzbe.png">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ ビー アミュプラザくまもと店</h3>
+                                            <p>
+                                                熊本県熊本市西区春日3-15-26アミュプラザくまもと3F<br>
+
+                                                <a href="https://be.tokyu-hands.co.jp/be_kumamoto/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    #}
+
+
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kyushuOkinawa_tokyuHandsUrasoe.jpg" alt="ハンズ 浦添西海岸店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ 浦添西海岸店</h3>
+                                            <p>
+                                                〒901-2123<br>
+                                                沖縄県浦添市西洲3丁目1番1<br>
+                                                サンエー浦添西海岸 PARCO CITY 1F<br>
+                                                &phone; 098-871-1100<br>
+                                                <a href="https://urasoe.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    {# 
+                                    <li>
+                                        <div class="ceralabo_shopList_shopGroup_imgBox">
+                                            <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/img_shopList_kyushuOkinawa_tokyuHandsNaha.jpg" alt="ハンズ 那覇メインプレイス店 店舗画像">
+                                        </div>
+                                        <div class="ceralabo_shopList_shopGroup_textBox">
+                                            <h3>ハンズ<br>那覇メインプレイス店</h3>
+                                            <p>
+                                                <strong>【期間限定：2020/7/6～9/30】</strong><br>
+                                                〒900-0006<br>
+                                                沖縄県那覇市おもろまち4-4-9<br>
+                                                サンエー那覇メインプレイス1F<br>
+                                                &phone; 098-951-3510<br>
+                                                <a href="https://naha.tokyu-hands.co.jp/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    #}
+ <li>
+                      <div class="ceralabo_shopList_shopGroup_imgBox"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/kyudaiito_tsutaya.jpg" alt="九大伊都 蔦屋書店 店舗画像"> </div>
+                      <div class="ceralabo_shopList_shopGroup_textBox">
+                        <h3>九大伊都 蔦屋書店</h3>
+                        <p>〒819-0388<br>
+                          福岡県福岡市西区九大新町５番１ いとＬａｂ＋<br>
+                          &phone; 092-407-2360<br>
+                          <a href="https://store.tsite.jp/kyudai-ito/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a> </p>
+                      </div>
+                    </li>
+<li>
+                      <div class="ceralabo_shopList_shopGroup_imgBox"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_shop/nagasaki_hands.JPG" alt="ハンズ 長崎店 店舗画像"> </div>
+                      <div class="ceralabo_shopList_shopGroup_textBox">
+                        <h3>ハンズ 長崎店</h3>
+                        <p>〒850-0058<br>
+                          長崎県長崎市尾上町1-1 アミュプラザ長崎4F<br>
+                          &phone; 095-816-0109<br>
+                          <a href="https://nagasaki.hands.net/" target="_blank" class="ceralabo_btn_sml">店舗HP >></a> </p>
+                      </div>
+                    </li>
+                                </ul>
+                                <p class="ceralabo_btn_pageTop_wrap">
+                                    <a href="#" class="ceralabo_btn_pageTop" data-smoothScroll>Page Top <img src="{{ app.config.user_data_urlpath }}/ceralabo/img/icon_doubleArrow.svg" alt="矢印"></a>
+                                </p>
+                            </div>
+                            {# ▲ ---- 九州・沖縄エリア ---- ▲ #}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

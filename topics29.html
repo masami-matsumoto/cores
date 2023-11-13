@@ -1,0 +1,806 @@
+{% extends 'default_frame.twig' %}
+{% block main %}
+<div class="main_only">
+  <div class="container-fluid inner no-padding">
+    <div id="main">
+      <div class="container-fluid">
+        <div id="feature01_box__body" class="row">
+          <div id="feature01_box__body_inner" class="col-md-10 col-md-offset-1">
+            <style>
+								p {
+									line-height: 1.7em;
+								}
+								@media screen and (max-width: 767px) {
+			p {
+			   text-align: left;
+			}
+		}
+
+
+
+								a p {
+									color: #4D4D4D;
+								}
+
+								.topics_title {
+									text-align: center;
+									margin-bottom: 30px;
+								}
+
+								.img_pc {
+									width: 70%;
+									text-align: center;
+								}
+
+								.topics_img_item_pc {
+									width: 50%;
+									text-align: center;
+								}
+
+								.topics_text {
+									text-align: center;
+									margin: 50px 0;
+								}
+
+								.topics_text_sub {
+									text-align: justfy;
+									color: #a5a5a5;
+								}
+
+								.topics_text_item {
+									text-align: center;
+									color: #a5a5a5;
+								}
+
+
+								.under {
+									background: linear-gradient(transparent 50%, #CFDDF2 50%);
+								}
+
+								.center {
+									text-align: center;
+								}
+
+								.box19 {
+									position: relative;
+									padding: 0.25em 1em;
+									width: 350px;
+								}
+
+								.box19:before,
+								.box19:after {
+									content: '';
+									width: 20px;
+									height: 30px;
+									position: absolute;
+									display: inline-block;
+								}
+
+								.box19:before {
+									border-left: solid 1px #9fa0a0;
+									border-top: solid 1px #9fa0a0;
+									top: 0;
+									left: 0;
+								}
+
+								.box19:after {
+									border-right: solid 1px #9fa0a0;
+									border-bottom: solid 1px #9fa0a0;
+									bottom: 0;
+									right: 0;
+								}
+
+								.box19 p {
+									margin: 0;
+									padding: 0;
+								}
+
+
+								.box2 {
+									padding: 0.5em 1em;
+									margin: 2em 0;
+									font-weight: normal;
+									color: #ffffff;
+									/*文字色*/
+									background: #7A7A7A;
+									border: solid 3px #7A7A7A;
+									/*線*/
+									border-radius: 15px;
+									/*角の丸み*/
+									width: 350px;
+								}
+
+								.box2 p {
+									margin: 0;
+									padding: 5px;
+								}
+
+
+								.box_kakoi {
+									padding: 0.5em 1em;
+									margin: 2em 0;
+									border: solid 1px #bababa;
+									/*線*/
+									border-radius: 10px;
+									/*角の丸み*/
+								}
+
+								.box_kakoi p {
+									margin: 0;
+									padding: 0;
+								}
+
+								.btn-item-link {
+									display: block;
+									margin: 1em auto;
+									padding: 10px;
+									background: #4D4D4D;
+									border-radius: 50px;
+
+								}
+
+								@media screen and (min-width: 768px) {
+									.btn-item-link {
+										width: 50%;
+
+									}
+								}
+
+								.btn-item-link a {
+									color: #FFF;
+									font-weight: bold;
+									text-decoration: none;
+									text-align: center;
+								}
+								.box_chui {
+			padding: 0.5em 1em;
+			margin: 2em 0;
+			font-weight: bold;
+			border: solid 3px #ff0000;
+		}
+
+		.box_chui p {
+			margin: 0;
+			padding: 0;
+			color: #ff0000;
+		}
+
+		.box_free {
+			margin: 4em 0;
+		}
+
+
+		.index_pnt {
+			width: 150px;
+		}
+
+		@media screen and (max-width: 767px) {
+			.index_pnt {
+				width: 120px;
+			}
+		}
+
+		.box_pnt {
+			position: relative;
+			padding: 0.25em 1em;
+			border: solid 1px #4D4D4D;
+			padding: 30px;
+		}
+
+		.box_pnt h1 {
+			font-size: 1.4em;
+		}
+
+		@media screen and (max-width: 767px) {
+			#item_detail .freearea p {
+				margin-bottom: 40px;
+			}
+		}
+
+		.btn-item-link {
+			display: block;
+			margin: 1em auto;
+			padding: 10px;
+			background: #224F83;
+			border-radius: 50px;
+
+		}
+
+		@media screen and (min-width: 768px) {
+			.btn-item-link {
+				width: 50%;
+
+			}
+		}
+
+		.btn-item-link a {
+			color: #FFF;
+			font-weight: bold;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		ul.cp_list {
+			padding: 0.5em;
+			list-style-type: none;
+			text-align: left;
+		}
+
+		ul.cp_list li {
+			position: relative;
+			padding-left: 25px;
+			border-bottom: solid 1px #e5e5e5;
+			margin-bottom: 0.5em;
+			line-height: 2em;
+		}
+
+		ul.cp_list li:before {
+			content: "";
+			position: absolute;
+			top: .1em;
+			left: 0;
+			-webkit-transform: rotate(50deg);
+			-ms-transform: rotate(50deg);
+			transform: rotate(50deg);
+			width: 8px;
+			height: 18px;
+			border-right: 1px solid #919191;
+			border-bottom: 1px solid #919191;
+		}
+
+
+		.ul-align-center {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.kaihatsu .ceralabo_accordion dt a::before {
+			display: none;
+		}
+
+		.sample_button:hover {
+			opacity: 0.6;
+		}
+
+		ceralabo_accordion dt a::before {
+			display: none;
+		}
+
+
+		a[href="#faq"]:link,
+		a[href="#faq"]:visited {
+			color: #4d4d4d;
+		}
+
+		a[href="#faq"]:hover {
+			color: #9c9b9b;
+		}
+
+		a[href="#movie"]:link,
+		a[href="#movie"]:visited {
+			color: #4d4d4d;
+		}
+
+		a[href="#movie"]:hover {
+			color: #9c9b9b;
+		}
+						.topics_inner_blue {
+							background-color: #CFDDF2;
+							padding: 20px;
+							border-radius: 20px;
+max-width: 540px;
+						}
+						.topics_inner_red {
+							background-color: #F4BDBE;
+							padding: 20px;
+							border-radius: 20px;
+max-width: 540px;
+						}
+						.topics_inner_blue h2 {
+							color: #190B75;
+							font-size: 1.8em;
+						}
+						.topics_inner_red h2 {
+							color :#B90A0D;
+							font-size: 1.8em;
+						}
+						.topics_flex {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						.topics_flex_img1 {
+							flex: 1
+						}
+						.topics_flex_img2 {
+							width: 50%;
+						}
+						@media screen and (min-width: 768px) {
+.img-item-link {
+    width: 50%;
+}
+						}
+							</style>
+            <center>
+              <h1 class="topics_title"> CeraLabo初 <br>
+                2種のレチノール美容液のご紹介</h1>
+            </center>
+            
+            <!-------------------------- ▼▼▼▼画像▼▼▼▼ -------------------------->
+            <center style="margin-bottom:50px;">
+              <div class="ceralabo_pc" style="width: 70%;"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics01.jpg" alt=""> </div>
+              <div class="ceralabo_pc_none"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics01.jpg"> </div>
+            </center>
+            <!-------------------------- ▲▲▲▲画像▲▲▲▲ --------------------------> 
+            <!-------------------------- ▼▼▼▼コンテンツ▼▼▼▼ ------------------------------------>
+            <center style="margin-bottom:100px;">
+              <p class="topics_text"> セララボ初のレチノール美容液<br class="ceralabo_pc">
+                「セラキュア スペリオセラムA」「セラシエル ヴィタセラムA」<br class="ceralabo_pc">
+                が登場。 </p>
+              <h1 class="topics_title">セラキュア スペリオセラムA</h1>
+              <div class="ceralabo_pc" style="width: 70%; margin-bottom: 50px"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics02.png" alt=""> </div>
+              <div class="ceralabo_pc_none"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics02.png"> </div>
+              <p class="topics_text">３種のレチノール誘導体*¹と１２種のセラミド*²を同時配合した、<br class="ceralabo_pc">
+                敏感肌発想のレチノール美容液。<br class="ceralabo_pc">
+                はじめてレチノールを使う方におすすめです。<br>
+                <br>
+                セララボのロングセラー商品<br>
+                「セラキュア ローション」の<br>
+                約２倍のセラミド量を配合しました。<br>
+                <br>
+                (レチノール成分合計濃度 約０．０６%) </p>
+              <p> <span style="font-size: 0.7em; color: #999999;"><sup>*1</sup>水添レチノール、パルミチン酸レチノール 、リノール酸レチノール(整肌成分)</span><br>
+                <span style="font-size: 0.7em; color: #999999;"><sup>*2</sup>セラミドＥＯＰ、セラミドＮＧ、セラミドＮＳ、セラミドＮＰ、セラミドＡＧ、セラミドＡＰ、セラミドＡＳ、フィトスフィンゴシン、グルコシルセラミド、セレブロシド、スフィンゴ糖脂質、ラウロイルグルタミン酸ジ（フィトステリル／オクチルドデシル）(エモリエント成分)</span><br>
+              </p>
+              <div class="btn-item-link" style="margin-bottom: 80px;"> <a href="https://cores-ec.site/ceralabo/products/detail/255"> セラキュア スペリオセラムAの<br class="ceralabo_pc_none">
+                商品ページへ </a> </div>
+              <h1 class="topics_title">セラシエル ヴィタセラムA</h1>
+              <div class="ceralabo_pc" style="width: 70%; margin-bottom: 50px;"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics03.png" alt=""> </div>
+              <div class="ceralabo_pc_none"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics03.png"> </div>
+              <p class="topics_text">純粋レチノール*³を含む４種のレチノール*⁴と<br class="ceralabo_pc">
+                ７種のエイジングケア成分*⁵を同時配合しました。<br>
+                <br>
+                積極的にエイジングケア*⁶に取り組みたい<br class="ceralabo_pc">
+                アクティブな方におすすめです。<br>
+                <br>
+                (レチノール成分合計濃度 約０．１%) <br>
+                <br>
+                はじめてレチノールを使う方は、セラキュアスペリオセラムAから。</p>
+              <p> <span style="font-size: 0.7em; color: #999999;"><sup>*3</sup>レチノール(整肌成分)</span><br>
+                <span style="font-size: 0.7em; color: #999999;"><sup>*4</sup>レチノール、水添レチノール、パルミチン酸レチノール 、リノール酸レチノール(整肌成分)</span><br>
+                <span style="font-size: 0.7em; color: #999999;"><sup>*5</sup>ヘマトコッカスプルビアリスエキス、テトラヘキシルデカン酸アスコルビル、ナイアシンアミド、シアノコバラミン、グルコシルヘスペリジン、酢酸トコフェロール、トコフェロール(整肌成分)</span><br>
+                <span style="font-size: 0.7em; color: #999999;"><sup>*6</sup>エイジングケアとは、年齢に応じた保湿のお手入れのことです </span><br>
+              </p>
+              <div class="btn-item-link"> <a href="https://cores-ec.site/ceralabo/products/detail/256">セラシエル ヴィタセラムAの<br class="ceralabo_pc_none">
+                商品ページへ </a> </div>
+            </center>
+            <!-------------------------- ▲▲▲▲コンテンツ▲▲▲▲ ------------------------------------> 
+            
+            <!-------------------------- ▼▼▼▼コンテンツ▼▼▼▼ ------------------------------------>
+            
+            <center style="margin-bottom:100px;">
+              <h1 class="topics_title">2種のレチノール美容液<br>
+                ３つの魅力 </h1>
+              <center style="margin-top:4em;">
+                <div class="box_pnt">
+                  <div class="index_pnt"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_item/k27a/index_pnt01.png"></div>
+                  <h1 class="title_pnt center">こだわりのレチノール成分</h1>
+                  <p class="box_pnt_text">レチノールとはビタミンAの一種で、<br class="ceralabo_pc">
+                    高い美容効果が期待される整肌成分です。<br>
+                    <br>
+                    肌にうるおいとみずみずしさを与え、<br class="ceralabo_pc">
+                    つるんとハリ肌に導きます。<br>
+                    <br>
+                    そのため、レチノールは毛穴が気になる方にもおすすめの成分です。</p>
+                  <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics04.png" style="width: 70%;" alt=""> </div>
+                <h1 class="topics_title" style="margin-top: 2em;">セラキュア スペリオセラムＡの<br>
+                  レチノール成分 </h1>
+                <p>レチノールは高い美容効果*⁷を持つ一方、<br class="ceralabo_pc">
+                  人によっては刺激になりやすい成分でもある為、<br class="ceralabo_pc">
+                  はじめてレチノール製品を使う敏感肌の方にとっては<br class="ceralabo_pc">
+                  不安になりやすいもの。<br>
+                  <br>
+                  そこで、セラキュア スペリオセラムAでは<br class="ceralabo_pc">
+                  誘導体として安定化した<br class="ceralabo_pc">
+                  3つのレチノール誘導体*¹のみを配合しました。<br>
+                  <br>
+                  肌へのやさしさを一番に考慮しながらも、<br class="ceralabo_pc">
+                  それぞれレチノールとしての働きが期待できます。<br>
+                  <br>
+                  <span style="font-size: 0.7em; color: #999999;"><sup>*1</sup>水添レチノール、パルミチン酸レチノール 、リノール酸レチノール(整肌成分) </span><br>
+                  <span style="font-size: 0.7em; color: #999999;"><sup>*7</sup>ハリ・ツヤのこと</span> </p>
+                <div class="topics_inner_blue">
+                  <h2>レチノールを初めて<br class="ceralabo_pc">
+                    使う方も挑戦しやすい</h2>
+                  <div class="topics_flex">
+                    <div class="topics_flex_img1"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/s_transp.png" alt=""/></div>
+                    <div class="topics_flex_img2"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/retinol_s.png" alt=""/></div>
+                  </div>
+                </div>
+                <p><span style="font-size: 0.7em; color: #999999;">※上記成分はすべて、整肌成分です。 </span></p>
+                <h1 class="topics_title" style="margin-top: 2em;">セラシエル ヴィタセラムＡの<br>
+                  レチノール成分 </h1>
+                <p>セラシエル ヴィタセラムAに配合している純粋レチノール*³は、<br class="ceralabo_pc">
+                  肌へのやさしさを考慮し、ゆっくりと働きかけるよう<br class="ceralabo_pc">
+                  レチノールをセラミドで包み込んだものを厳選しました。<br>
+                  <br>
+                  純粋レチノール*³だけではなく、<br class="ceralabo_pc">
+                  3種のレチノール誘導体*¹を配合することで、<br class="ceralabo_pc">
+                  高い安定性をもちつつもハリ・ツヤを与えます。<br>
+                  <br>
+                  <span style="font-size: 0.7em; color: #999999;"><sup>*3</sup>レチノール(整肌成分)</span><br>
+                  <span style="font-size: 0.7em; color: #999999;"><sup>*1</sup>水添レチノール、パルミチン酸レチノール 、リノール酸レチノール(整肌成分)</span></p>
+                <div class="topics_inner_red">
+                  <h2>積極的にエイジングケア<sup>*6</sup>を<br class="ceralabo_pc">
+                    取り入れたい方に</h2>
+                  <div class="topics_flex">
+                    <div class="topics_flex_img1"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/v_transp.png" alt=""/></div>
+                    <div class="topics_flex_img2"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/retinol_v.png" alt=""/></div>
+                  </div>
+                </div>
+                <p><span style="font-size: 0.7em; color: #999999;"><sup>*3</sup>レチノール(整肌成分)</span><br>
+                  <span style="font-size: 0.7em; color: #999999;"><sup>*6</sup>エイジングケアとは、年齢に応じた保湿のお手入れのことです<br>
+                  ※上記成分はすべて、整肌成分です。</span></p>
+              </center>
+              <center style="margin-top:4em;">
+                <div class="box_pnt">
+                  <div class="index_pnt"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_item/k27a/index_pnt02.png"></div>
+                  <h1 class="title_pnt center">2種のレチノール美容液<br>
+                    その他の配合成分の特徴 </h1>
+                  <p class="box_pnt_text"> <br>
+                    セララボでは、<br>
+                    <br>
+                    「敏感肌の中でもかなりの敏感肌だけど<br class="ceralabo_pc">
+                    レチノールを使いたい」 <br>
+                    <br>
+                    「美容が大好きで、<br class="ceralabo_pc">
+                    積極的に美容成分を取り入れたい」 <br>
+                    <br>
+                    どちらの方のお好みにも沿えるよう、<br class="ceralabo_pc">
+                    レチノール成分はもちろん、<br class="ceralabo_pc">
+                    その他の配合成分にもこだわりました。 </p>
+                  <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics05.jpg" class="ceralabo_pc" style="width: 70%;"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics05.jpg" class="ceralabo_pc_none"> </div>
+                <h1 class="topics_title" style="margin-top: 2em;">敏感肌にうれしいセラミドを<br>
+                  セラキュアローションの約2倍量配合した<br>
+                  セラキュア スペリオセラムＡ </h1>
+                <h2 class="topics_title">セラミドとは</h2>
+                <p>セララボの保湿アイテムには、様々なセラミドが配合されています。<br class="ceralabo_pc">
+                  セラミドは肌の角質層に存在する「細胞間脂質」に多く含まれ、<br class="ceralabo_pc">
+                  乾燥や化学物質などの外部刺激から身を守るバリアの役割を担うとされています。<br class="ceralabo_pc">
+                  このセラミドが不足するとバリア機能が弱まるといわれており、<br class="ceralabo_pc">
+                  乾燥や紫外線などのダメージを受けやすくなるのです。<br class="ceralabo_pc">
+                  セラミドが効果的に補われることで、荒れにくく、すこやかな肌へと導かれていきます。</p>
+                <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics06_pc.png" class="ceralabo_pc" style="width: 70%;"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics06_sp.png" class="ceralabo_pc_none">
+                <h1 class="topics_title" style="margin-top: 2em;">さまざまなエイジングケア*⁶成分を配合した<br>
+                  セラシエル ヴィタセラムＡ </h1>
+                <p>７つの美容成分*⁵を配合することで、<br>
+                  エイジングケア*⁶をサポートします。<br>
+                  <br>
+                  <span style="font-size: 0.7em; color: #999999;"><sup>*5</sup>ヘマトコッカスプルビアリスエキス、テトラヘキシルデカン酸アスコルビル、ナイアシンアミド、シアノコバラミン、グルコシルヘスペリジン、酢酸トコフェロール、トコフェロール（整肌成分）</span> <br>
+                  <span style="font-size: 0.7em; color: #999999;"><sup>*6</sup>エイジングケアとは、年齢に応じた保湿のお手入れのことです</span><br>
+                </p>
+                <h1 class="topics_title" style="margin-top: 2em;">セラシエルシリーズに欠かせない<br>
+                  赤い美容成分「アスタキサンチン*⁸」 </h1>
+                <p>「アスタキサンチン*⁸」は、サケやエビ・カニなどに含まれる天然の赤い色素で<br class="ceralabo_pc">
+                  美容成分の中でも、高いエイジングケア*⁶効果が期待されている成分です。<br>
+                  <br>
+                  本商品で使用しているアスタキサンチンは、<br class="ceralabo_pc">
+                  「ヘマトコッカス藻」という藻類から抽出しております。<br>
+                  <br>
+                  <span style="font-size: 0.7em; color: #999999;"><sup>*6</sup>エイジングケアとは、年齢に応じた保湿のお手入れのことです </span><br>
+                  <span style="font-size: 0.7em; color: #999999;"><sup>*8</sup>ヘマトコッカスプルビアリスエキス</span> </p>
+                <div style="margin: -10px auto 0; width: 30%;"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/astaxanthin.png" alt=""></div>
+                <h1>そのほかにも<br class="ceralabo_pc">
+                  ６つのビタミン成分を配合し<br class="ceralabo_pc">
+                  エイジングケア*⁶をサポート </h1>
+                <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/6_pc.png" class="ceralabo_pc" alt=""> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/6_sp.png" class="ceralabo_pc_none" alt="">
+                <p> <span style="font-size: 0.7em; color: #999999;"><sup>*6</sup>エイジングケアとは、年齢に応じた保湿のお手入れのことです</span><br>
+                  <span style="font-size: 0.7em; color: #999999;">※上記成分はすべて、整肌成分です</span></p>
+              </center>
+              <center style="margin-top:4em;">
+                <div class="box_pnt">
+                  <div class="index_pnt"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_item/k27a/index_pnt03.png"></div>
+                  <h1 class="title_pnt center">オイル・グリセリンの配合量を<br class="ceralabo_pc">
+                    最小限に </h1>
+                  <p class="box_pnt_text">少しでも幅広い肌質の方にお使いいただけるよう、<br class="ceralabo_pc">
+                    オイル・グリセリンは原料由来の配合のみに留め、<br class="ceralabo_pc">
+                    意図的な添加をしておりません。<br>
+                    <br>
+                    べたつきを抑えつつ、なめらかな使用感です。<br>
+                    <br>
+                  </p>
+                  <div class="btn-item-link"> <a href="https://cores-ec.site/ceralabo/user_data/topics24"> グリセリンについての<br class="ceralabo_pc_none">
+                    詳細はこちら</a> </div>
+                </div>
+              </center>
+            </center>
+            <!-------------------------- ▲▲▲▲コンテンツ▲▲▲▲ ------------------------------------> 
+            <!-------------------------- ▼▼▼▼セラシエル ヴィタセラムAとの違い▼▼▼▼ ------------------------------------>
+            <center>
+              <h1 class="topics_title">2種のレチノール美容液<br class="ceralabo_pc">
+                それぞれの特徴を<br class="ceralabo_pc">
+                ひと目で比較 </h1>
+              <br>
+              <br>
+              <p class="box_pnt_text center ceralabo_pc_none" style="margin-bottom: 20px;">※右にスクロールしてご覧ください。</p>
+              <div class="wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" class="top"></th>
+                      <th scope="col"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/s_transp.png" style="width:50%;"> <br>
+                        セラキュア<br>
+                        スペリオセラムA </th>
+                      <th scope="col"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/v_transp.png" style="width:50%;"> <br>
+                        セラシエル<br>
+                        ヴィタセラムA </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="top">おすすめの方</th>
+                      <td>・はじめてレチノール製品を使う<br>
+                        ・レチノールと一緒に、セラミドをし っかり補給したい </td>
+                      <td>・レチノール製品に肌が慣れている<br>
+                        ・レチノールと一緒に、他のエイジングケア成分も補給したい</td>
+                    </tr>
+                    <tr>
+                      <th class="top">特徵</th>
+                      <td>・セラキュアローションの約２倍のセラミド量を配合</td>
+                      <td>・レチノールの他にも様々なエイジングケア＊６成分を配合</td>
+                    </tr>
+                    <tr>
+                      <th class="top">レチノール成分</th>
+                      <td>・水添レチノール<br>
+                        ・パルミチン酸レチノール<br>
+                        ・リノール酸レチノール<br>
+                        （整肌成分） </td>
+                      <td>・純粋レチノール＊3<br>
+                        ・水添レチノール<br>
+                        ・パルミチン酸レチノール<br>
+                        ・リノール酸レチノール<br>
+                        （整肌成分） </td>
+                    </tr>
+                    <tr>
+                      <th class="top">レチノール総配合濃度</th>
+                      <td>約0.06%</td>
+                      <td>約 0.1%</td>
+                    </tr>
+                    <tr>
+                      <th class="top">セラミド成分</th>
+                      <td><span style="font-weight: bold; display: block;">【7種のヒト型セラミド】</span><span style="font-size: 0.6875em;"> セラミドEOP、セラミドNG、セラ ミドNS、セラミドNP、セラミドA G、セラミドAP、セラミドAS</span><br>
+                        <span style="font-weight: bold; display: block;">【5種のセラミド類似体】</span> <span style="font-size: 0.6875em;">フィトスフィンゴシン、グルコシルセラミド、セレブロシド、スフィンゴ糖脂質、ラウロイルグルタミン酸ジ(フィトステリル/オクチルドデシル)<br>
+                        (整肌成分) </span></td>
+                      <td><span style="font-weight: bold; display: block;">【5種のヒト型セラミド】</span> <span style="font-size: 0.6875em;">セラミドEOP、セラミドNG、セラミドNP、セラミドAG、セラミドAP</span><br>
+                        <span style="font-weight: bold; display: block;">【3種のセラミド類似体】</span><span style="font-size: 0.6875em;"> フィトスフィンゴシン、セレブロシド、グルコシルセラミド<br>
+                        (整肌成分)</span></td>
+                    </tr>
+                    <tr>
+                      <th class="top">エイジングケア*⁶成分</th>
+                      <td><span style="font-weight: bold; display: block;">【4種のエイジングケア*⁶成分】 </span><span style="font-size: 0.6875em;">ビタミンP誘導体(グルコシルヘスペリジン、ビタミンC誘導体(テトラヘキシルデカン酸アスコルビル)、ビタミンE誘導体（酢酸トコフェロール)、ビタミンE(トコフェロール)<br>
+                        (整肌成分)</span><br></td>
+                      <td><span style="font-weight: bold; display: block;">【7種のエイジングケア*⁶成分】 </span><span style="font-size: 0.6875em;">ビタミンC誘導体(テトラヘキシルデカン酸アスコルビル)、アスタキサンチン(ヘマトコッカスブルゾアリスエキス)、ナイアシンアミド、ビタミンB12（シアノコバラミン)、ビタミンP誘導体(グルコシルヘスペリジン)、ビタミンE誘導体(酢酸トコフェロール)、ビタミントE(トコフェロール)<br>
+                        (整肌成分)</span><br></td>
+                    </tr>
+                    <!-- <tr>
+                <th class="top">保湿力</th>
+                <td>★★★☆☆</td>
+                <td>★★★★☆</td>
+              </tr>
+              <tr>
+                <th class="top">セラミド量</th>
+                <td><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_item/k34a/img_item_k34a_star.png" style="width:25%;"></td>
+                <td>★★★☆☆</td>
+              </tr> -->
+                  </tbody>
+                </table>
+                <center>
+                  <span style="font-size: 0.7em; color: #999999;">*3レチノール(整肌成分)<br>
+                  *6エイジングケアとは、年齢に応じた保湿のお手入れのことです</span>
+                </center>
+                <br>
+              </div>
+              <div class="btn-item-link"> <a href="https://cores-ec.site/ceralabo/products/detail/255"> セラキュア スペリオセラムAの<br class="ceralabo_pc_none">
+                商品ページへ </a> </div>
+              <div class="btn-item-link"> <a href="https://cores-ec.site/ceralabo/products/detail/256"> セラシエル ヴィタセラムAの<br class="ceralabo_pc_none">
+                商品ページへ </a> </div>
+            </center>
+            <style>
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        padding: 0;
+        width: 760px;
+        table-layout: fixed;
+        font-size: .85em;
+    }
+
+    table tr {
+        background-color: #fff;
+        padding: .35em;
+        border: 2px solid #eee;
+    }
+
+    /*    table tr:last-child {
+    border: none;
+    }*/
+
+    table th {
+        padding: 2em;
+        border-right: 2px solid #fff;
+    }
+
+    th.top {
+        width: 30%;
+    }
+    th.sec {
+        width: 30%;
+    }
+
+    table td {
+        padding: 2em .5em;
+        border-right: 2px solid #eee;
+        text-align: center;
+    }
+
+    table thead tr {
+        background-color: #E6F4FD;
+        color: #000;
+    }
+
+    table tbody th {
+        border-right: 2px solid #eee;
+    }
+
+    th.non {
+        border-right: none;
+    }
+
+    .txt {
+        text-align: left;
+        font-size: .85em;
+    }
+
+    .price {
+        color: #000;
+        font-weight: bold;
+        font-size: 1.3em
+    }
+
+    .price span {
+        font-size: .6em;
+    }
+
+    @media screen and (max-width: 600px) {
+        .wrap {
+            overflow-x: scroll;
+        }
+    }
+</style>
+            <!-------------------------- ▲▲▲▲セラシエル ヴィタセラムAとの違い▲▲▲▲ ------------------------------------> 
+            
+            <!-------------------------- ▼▼▼▼コンテンツ▼▼▼▼ ------------------------------------>
+            
+            <center style="margin-top:4em;">
+              <h1 class="topics_title"> はじめてのレチノール<br>
+                使い方のコツ </h1>
+              <p>敏感肌でレチノール製品を はじめて使う方は、<br class="ceralabo_pc">
+                セラキュア スペリオセラムAからお使いいただき、<br class="ceralabo_pc">
+                パッチテストの実施を推奨します。<br>
+                <br>
+                初めのうちは毎日の連用を避け、<br class="ceralabo_pc">
+                3日おきなどに使い<br class="ceralabo_pc">
+                肌をレチノールに慣らしていきましょう。<br>
+                <br>
+                数週間使い、 肌がレチノールに慣れてきたら<br class="ceralabo_pc">
+                使用頻度を上げていただけます。<br>
+                <br>
+                なお、肌に合うかご不安な方や、<br class="ceralabo_pc">
+                今までにレチノール配合の製品で肌トラブルが起きた方は、<br class="ceralabo_pc">
+                公式取扱店舗での店頭テスター、またはテスターパウチ（試供品）で<br class="ceralabo_pc">
+                お試ししてからのご使用を強くお勧めしております。<br class="ceralabo_pc">
+                テスターパウチのお申し込みについては、<br class="ceralabo_pc">
+                本ページの最後に記載しております。<br>
+                <br>
+                本製品使用後に赤みや皮むけなど、<br class="ceralabo_pc">
+                肌トラブルが生じた場合は<br class="ceralabo_pc">
+                ご使用をお控えください。 </p>
+              <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/step_pc.png" alt="" class="ceralabo_pc"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/step_sp.png" class="ceralabo_pc_none" alt="">
+            </center>
+            <!-------------------------- ▲▲▲▲コンテンツ▲▲▲▲ ------------------------------------> 
+            <!-------------------------- ▼▼▼▼使い方▼▼▼▼ ------------------------------------>
+            <center style="margin-top:4em;">
+              <h1 class="topics_title">レチノール美容液<br>
+                基本の使い方 </h1>
+              <p class="center">レチノールの性質上、夜のご使用をおすすめします。<br>
+                紫外線に当たる前のご使用はお控えください。<br>
+                <br>
+                化粧水で保湿した後、適量をなじませてください。<br>
+                <br>
+                -使用量の目安-<br>
+                部分使いの場合：1～2プッシュ程度<br>
+                全顔使用の場合：2～3プッシュ程度<br>
+                <br>
+                ※お肌の調子によっては、こちらの目安に関わらず使用量を調節してください。<br>
+                ※開封後は冷蔵庫での保管をおすすめします。<br>
+                <br>
+                レチノールは成分の特性上、他の化粧品に比べ、<br>
+                使う時の肌状態やタイミングの工夫が必要です。<br>
+                紫外線に当たる前のご使用は絶対にお控えください。<br>
+                <br>
+                また、ご使用後肌トラブルが落ち着かない場合は<br>
+                ご使用をお控えください。 </p>
+            </center>
+            <center style="margin-top:4em;">
+              <div class="ceralabo_pc">
+                <h1 class="main_title">他の製品と組み合わせる際の使用順序</h1>
+              </div>
+              <div class="ceralabo_pc_none">
+                <h1 class="topics_title">他の製品と組み合わせる際の使用順序</h1>
+              </div>
+              <p class="center">セララボでは敏感肌に配慮し、<br>
+                化粧水などでの保湿後の利用をおすすめしております。<br>
+                <br>
+                レチノールが肌に慣れている方につきましては、<br>
+                洗顔後すぐにお使いいただいたり、乳液やクリームの後の利用も可能です。<br>
+                その他の美容液との併用も基本的に可能です。<br>
+                <br>
+                《セララボのスキンケアラインナップとの組み合わせ例》<br>
+                <br>
+                セラキュア ローション　→　セラキュア シャインドリップ　→　<b>セラキュア スペリオセラムA</b>　→　セラキュア フェイスクリーム　等<br>
+                <br>
+                ※他社製品と併用される場合は、それぞれの使用方法をよく読み、パッチテスト等を行い注意してご使用ください。 </p>
+              <div class="btn-item-link"> <a href="https://cores-ec.site/ceralabo/products/detail/255"> セラキュア スペリオセラムAの<br class="ceralabo_pc_none">
+                商品ページへ </a> </div>
+              <div class="btn-item-link"> <a href="https://cores-ec.site/ceralabo/products/detail/256"> セラシエル ヴィタセラムAの<br class="ceralabo_pc_none">
+                商品ページへ </a> </div>
+            </center>
+            <!--
+<center>
+<div class="btn-item-link" style="background: #fe0000;">
+<a class="link-video" href="#movie" style="color: #fff;" data-smoothScroll>
+動画で使い方を見る
+</a>
+</div>
+</center>
+-->
+            
+            <style>
+    a.link-video::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 14px;
+        background: url({{ app.config.user_data_urlpath }}/ceralabo/img/img_icon_video.png) no-repeat;
+        background-size: contain;
+        margin-right: 3px;
+    }
+</style>
+            <!-------------------------- ▲▲▲▲使い方▲▲▲▲ ------------------------------------> 
+            <!-------------------------- ▼▼▼▼コンテンツ▼▼▼▼ ------------------------------------>
+            
+            <center style="margin-top:4em;">
+              <h1 class="topics_title"> 2種のレチノール美容液<br class="ceralabo_pc">
+                テスターパウチ（試供品）の<br class="ceralabo_pc">
+                お申し込みについて </h1>
+              <p>時期によってはテスターパウチ（試供品）を<br class="ceralabo_pc">
+                配布している場合がございます。<br>
+                <br>
+                セララボ公式LINEにて希望者募集を行いますので、<br class="ceralabo_pc">
+                ご希望の場合はお友達追加の上、<br class="ceralabo_pc">
+                お知らせをお待ちください。<br>
+                <br>
+                セララボ公式LINEは<a href="https://lin.ee/602Hx7K">こちら</a> </p>
+              <div class="ceralabo_pc" style="width: 70%;"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics07.jpg" alt=""> </div>
+              <div class="ceralabo_pc_none"> <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/29/topics07.jpg"> </div>
+            </center>
+            <!-------------------------- ▲▲▲▲コンテンツ▲▲▲▲ ------------------------------------> 
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

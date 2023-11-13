@@ -1,0 +1,109 @@
+<!-- ここにブロックのコンテンツを記述 -->
+<style type="text/css">
+    #floating-banner {
+      width:150px;
+      position: fixed;
+      z-index: 999;
+      display: none; /* 最初は非表示に設定 */
+    }
+    .banner-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 9999;
+      width: 15px;
+      height: 15px;
+      border: none;
+      background-color: #fff;
+    }
+    .banner-close::before,
+    .banner-close::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1em;
+      height: 0.1em;
+      background: #333;
+    }
+    .banner-close::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .banner-close::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    #floating-banner.is-show {
+      display: block; /* 表示状態にするためにdisplayをblockに変更 */
+    }
+  
+    /* PC用のスタイル */
+@media screen and (min-width: 1200px) {
+  #floating-banner {
+    top: 0px; /* PCの場合のトップ位置 */
+    right: 20px; /* PCの場合の右位置 */
+  }
+  .banner-close {
+    cursor: pointer;
+  }
+}
+
+/* SP用のスタイル */
+@media screen and (max-width: 1199px) {
+  #floating-banner {
+    top: 0px; /* SPの場合の下部からの位置 */
+    right: 10px; /* SPの場合の右位置 */
+  }
+}
+  </style>
+  <script>
+    const popupShownKey = 'popupShown'; // 制御変数を宣言
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      const closeButton = document.querySelector(".banner-close");
+      const banner = document.getElementById("floating-banner");
+  
+      closeButton.addEventListener("click", function () {
+        banner.style.display = "none";
+        // ポップアップが閉じられたことを示す制御変数をセット
+        sessionStorage.setItem(popupShownKey, true);
+      });
+  
+      // 制御変数を確認し、ポップアップがまだ表示されていない場合に表示
+      if (!sessionStorage.getItem(popupShownKey)) {
+        banner.classList.add('is-show'); // 表示状態を切り替えるためにクラスを追加
+      }
+    });
+  
+    /* スクロール時の処理 */
+var banner = document.getElementById("floating-banner");
+var bannerTopPosition = 10; // バナーの上部からの初期位置
+
+{# // メディアクエリを使用してPCとSPで異なる位置を設定
+if (window.innerWidth >= 980) { // PC用の条件
+  bannerTopPosition = 10; // PCの場合の位置
+} else {
+  bannerTopPosition = 400; // SPの場合の位置
+} #}
+
+window.addEventListener("scroll", function () {
+  var scrollY = window.scrollY || window.pageYOffset;
+  var banner = document.getElementById("floating-banner");
+if (banner) {
+  // 要素が存在する場合の処理
+  banner.style.transform = "translateY(" + (bannerTopPosition + scrollY) + "px)";
+} else {
+  // 要素が存在しない場合の処理
+  console.error("要素が存在しません。");
+}
+});
+  </script>
+  <div id="floating-banner">
+    {% set request_path = app.request.getPathInfo() %}
+    {% if request_path == '/ceralabo/products/detail/255' %}
+      <button class="banner-close"></button>
+      <a href="https://lin.ee/RMpAC6W" target="_blank"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_popup/banner_s.png"/></a>
+    {% elseif request_path == '/ceralabo/products/detail/256' %}
+      <button class="banner-close"></button>
+      <a href="https://lin.ee/RMpAC6W" target="_blank"><img src="{{ app.config.user_data_urlpath }}/ceralabo/img_popup/banner_v.png"/></a>
+    {% endif %}
+  </div>
