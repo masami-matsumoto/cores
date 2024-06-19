@@ -1,0 +1,478 @@
+{% extends 'default_frame.twig' %}
+{% block main %}
+<div class="main_only">
+    <div class="container-fluid inner no-padding">
+        <div id="main">
+            <div class="container-fluid">
+                <div id="feature01_box__body" class="row">
+                    <div id="feature01_box__body_inner" class="col-md-10 col-md-offset-1">
+
+<style>
+
+.topics_title{
+  text-align: justfy;
+ margin-bottom: 30px;
+}
+
+.topics_img_pc{
+ width: 45%;
+ text-align: center;
+}
+
+.topics_img_pc_2{
+ width: 60%;
+ text-align: center;
+}
+
+.topics_img_item_pc{
+ width: 50%;
+ text-align: center;
+}
+
+.topics_text{
+ text-align: justfy;
+  line-height: 1.8;
+}
+
+.topics_text_sub{
+ text-align: justfy;
+ color: #a5a5a5; 
+ line-height: 1.8;
+}
+
+.topics_text_item{
+ text-align: center;
+ color: #a5a5a5;
+}
+
+
+</style>
+
+<br>
+
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_01.png">
+
+<br>
+<br>
+
+
+<!-------------------------- ▼▼▼▼コンテンツ▼▼▼▼ ------------------------------------>
+<center>
+<h1 class="topics_title">
+はじめてみよう、<br class="ceralabo_pc_none">オフスキンケア。
+</h1>
+
+<p class="topics_text">
+
+オフスキンケアが気になるけど、<br>「何からはじめればいいのかわからない」<br>
+CeraLabo初心者におすすめの<br class="ceralabo_pc_none">3点セットをご紹介致します。<br>
+オフスキンケアを始めるなら<br class="ceralabo_pc_none">こちらからお試しください。<br>
+<br>
+</p>
+</center>
+<!-------------------------- ▲▲▲▲コンテンツ▲▲▲▲ ------------------------------------>
+
+<br>
+
+<!------------------------------------ ▼▼▼リンク▼▼▼ ------------------------------------>
+<!---------------------- pc ------------------------>
+<center>
+<div class="ceralabo_pc">
+<div class="topics_img_pc_2">
+
+<a href="https://cores-ec.site/ceralabo/products/detail/83">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_09.png">
+</a>
+
+</div>
+</div>
+</center>
+<!---------------------- pc ------------------------>
+<!---------------------- sp ------------------------>
+<div class="ceralabo_pc_none">
+
+<a href="https://cores-ec.site/ceralabo/products/detail/83">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_09.png">
+</a>
+
+</div>
+<!---------------------- sp ------------------------>
+<!------------------------------------ ▲▲▲リンク▲▲▲ ------------------------------------>
+
+
+
+<br>
+<br class="ceralabo_pc">
+<br class="ceralabo_pc_none">
+
+
+<!------------------ ▼▼▼囲い▼▼▼ ------------------->
+<center>
+<div style="width:100% ;
+height:100%;
+border:#dbdbdb solid 1px;">
+
+<br>
+
+<center>
+<h1 class="topics_title">
+オフスキンケアの<br class="ceralabo_pc_none">復習。
+</h1>
+
+<p class="topics_text">
+
+オフスキンケアで最も大切なのは<br>
+「肌に極力負担なく適切に肌の汚れを<br>
+除去できるクレンジング<br class="ceralabo_pc_none">＆洗顔料」です。<br>
+<br>
+スキンケア化粧品をどう変更しても<br>
+クレンジングと洗顔を<br class="ceralabo_pc_none">そのままにしていたら<br>
+それはオフスキンケアではありません。<br>
+<br>
+クレンジングや洗顔料を見直すことが<br>
+オフスキンケアの最重要事項です。<br>
+
+<br>
+
+</p>
+</center>
+
+
+<div style="width: 80%; ">
+<!------------------------------------ ▼▼▼リンク▼▼▼ ------------------------------------>
+<!---------------------- pc ------------------------><center>
+<div class="ceralabo_pc">
+<div class="topics_img_pc">
+
+<a href="{{ url(app.config.user_data_route, {'route': 'topics01'}) }}">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_10.png">
+</a>
+
+</div>
+</div>
+</center>
+<!---------------------- pc ------------------------>
+<!---------------------- sp ------------------------>
+<div class="ceralabo_pc_none">
+
+<a href="{{ url(app.config.user_data_route, {'route': 'topics01'}) }}">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_10.png">
+</a>
+
+</div>
+<!---------------------- sp ------------------------>
+<!------------------------------------ ▲▲▲リンク▲▲▲ ------------------------------------>
+</div>
+
+
+
+<br>
+<br><br>
+</div></center>
+<!-------------- ▲▲▲囲い▲▲▲ ----------------->
+
+
+
+
+{# 
+
+<br class="ceralabo_pc">
+ <br>
+ <br>
+
+<!------------------------------------ ▼▼▼リンク▼▼▼ ------------------------------------>
+<!---------------------- pc ------------------------>
+<center>
+<div class="ceralabo_pc">
+<div class="topics_img_pc">
+
+<a href="{{ url(app.config.user_data_route, {'route': 'topics01'}) }}">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_10.png">
+</a>
+
+</div>
+</div>
+</center>
+<!---------------------- pc ------------------------>
+<!---------------------- sp ------------------------>
+<div class="ceralabo_pc_none">
+
+<a href="{{ url(app.config.user_data_route, {'route': 'topics01'}) }}">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_10.png">
+</a>
+
+</div>
+<!---------------------- sp ------------------------>
+<!------------------------------------ ▲▲▲リンク▲▲▲ ------------------------------------>
+
+ #}
+
+
+
+
+<br class="ceralabo_pc">
+ <br>
+ <br>
+
+
+<!-------------------------------- ▼▼▼クレンジング▼▼▼ -------------------------------------------->
+<!------------------------------------ 商品写真 ------------------------------------>
+<!---------------------- pc ------------------------>
+<center>
+<div class="ceralabo_pc">
+<div class="topics_img_item_pc">
+
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_02.png">
+
+</div>
+</div>
+</center>
+<!---------------------- pc ------------------------>
+
+<!---------------------- sp ------------------------>
+<div class="ceralabo_pc_none">
+
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_02.png">
+
+</div>
+<!---------------------- sp ------------------------>
+<!------------------------------------ 商品写真 ------------------------------------>
+
+
+<!-------------------------- コンテンツ ------------------------------------>
+<center>
+<p class="topics_text_item">
+セラヴェール プラチナム<br>
+クレンジングオイル<br>
+120mL　3,800円(税込)<br>
+</p>
+<br>
+
+<h1 class="topics_title">
+美容オイルで<br class="ceralabo_pc_none">クレンジング
+</h1>
+
+
+<p class="topics_text">
+高級美容オイルにも使用されている<br class="ceralabo_pc_none">「マカデミアナッツ油」を主成分とし、<br>
+洗い流し後のお肌をしっとり<br class="ceralabo_pc_none">柔らかな質感に整えてくれます。<br>
+</p>
+
+<p class="topics_text_sub">
+※W洗顔は不要ですが、お客様の肌質に<br class="ceralabo_pc_none">よっても異なります。<br>
+ニキビ肌、油分が気になる方には<br class="ceralabo_pc_none">W洗顔をおすすめしております。<br>
+</p>
+
+<br>
+<br>
+
+
+</center>
+<!-------------------------- コンテンツ ------------------------------------>
+<!-------------------------------- ▲▲▲▲クレンジング▲▲▲▲ -------------------------------------------->
+
+
+ <br>
+
+
+<!-------------------------------- ▼▼▼インデュース▼▼▼ -------------------------------------------->
+<!------------------------------------ 商品写真 ------------------------------------>
+<!---------------------- pc ------------------------>
+<center>
+<div class="ceralabo_pc">
+<div class="topics_img_item_pc">
+
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_03.png">
+
+</div>
+</div>
+</center>
+<!---------------------- pc ------------------------>
+
+<!---------------------- sp ------------------------>
+<div class="ceralabo_pc_none">
+
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_03.png">
+
+</div>
+<!---------------------- sp ------------------------>
+<!------------------------------------ 商品写真 ------------------------------------>
+
+<!-------------------------- コンテンツ ------------------------------------>
+<center>
+<p class="topics_text_item">
+セラヴェール<br>
+スキンウォッシュ インデュース<br>
+250mL　1,800円(税込)<br>
+</p>
+<br>
+
+<h1 class="topics_title">
+洗浄力を下げる<br class="ceralabo_pc_none">という選択
+</h1>
+
+
+<p class="topics_text">
+肌に必要な水分や油は守りながら、<br class="ceralabo_pc_none">不要な汚れ・老廃物のみを洗浄。<br>
+洗浄格差による肌荒れの恐れがあるため、<br class="ceralabo_pc_none">普段石鹸など<br>
+高めの洗浄力の洗顔料を使用<br class="ceralabo_pc_none">している方はInduceからご使用ください。<br>
+</p>
+
+<br>
+<br>
+</center>
+<!-------------------------- コンテンツ ------------------------------------>
+<!-------------------------------- ▲▲▲▲インデュース▲▲▲▲ -------------------------------------------->
+
+
+ <br>
+
+
+<!-------------------------------- ▼▼▼ローション▼▼▼ -------------------------------------------->
+<!------------------------------------ 商品写真 ------------------------------------>
+<!---------------------- pc ------------------------>
+<center>
+<div class="ceralabo_pc">
+<div class="topics_img_item_pc">
+
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_04.png">
+
+</div>
+</div>
+</center>
+<!---------------------- pc ------------------------>
+
+<!---------------------- sp ------------------------>
+<div class="ceralabo_pc_none">
+
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_04.png">
+
+</div>
+<!---------------------- sp ------------------------>
+<!------------------------------------ 商品写真 ------------------------------------>
+
+<!-------------------------- コンテンツ ------------------------------------>
+<center>
+<p class="topics_text_item">
+セラキュア ローション<br>
+120mL　3,400円(税込)<br>
+</p>
+<br>
+
+<h1 class="topics_title">
+「セラミド」の補給
+</h1>
+
+
+<p class="topics_text">
+穏やかな洗浄力に対する保湿は、<br class="ceralabo_pc_none">最低限で十分。<br>
+人肌に存在する「ヒト型セラミド」を<br class="ceralabo_pc_none">複数配合することで、<br>
+高いバリア補助機能を実現。<br>
+洗顔で失われた「セラミド」の<br class="ceralabo_pc_none">補給で乾燥を防ぎます。<br>
+</p>
+
+<br>
+<br>
+</center>
+<!-------------------------- コンテンツ ------------------------------------>
+<!-------------------------------- ▲▲▲▲ローション▲▲▲▲ -------------------------------------------->
+
+
+ <br>
+
+
+<!------------------------------------ ▼▼▼リンク▼▼▼ ------------------------------------>
+<!---------------------- pc ------------------------>
+<center>
+<div class="ceralabo_pc">
+<div class="topics_img_pc_2">
+
+<a href="https://cores-ec.site/ceralabo/products/detail/83">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_09.png">
+</a>
+
+</div>
+</div>
+</center>
+<!---------------------- pc ------------------------>
+<!---------------------- sp ------------------------>
+<div class="ceralabo_pc_none">
+
+<a href="https://cores-ec.site/ceralabo/products/detail/83">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_09.png">
+</a>
+
+</div>
+<!---------------------- sp ------------------------>
+<!------------------------------------ ▲▲▲リンク▲▲▲ ------------------------------------>
+
+
+
+
+
+<br><br><br>
+<center>
+<p>
+個別の商品についてはこちら
+</p>
+</center>
+
+<!------------------------------------ ▼▼▼リンク▼▼▼ ------------------------------------>
+
+<!---------------------- pc ------------------------>
+<center>
+<div class="ceralabo_pc">
+<div class="topics_img_pc">
+
+<a href="https://cores-ec.site/ceralabo/products/detail/52">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_06.png">
+</a>
+<a href="https://cores-ec.site/ceralabo/products/detail/55">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_07.png">
+</a>
+<a href="https://cores-ec.site/ceralabo/products/detail/53">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_08.png">
+</a>
+
+</div>
+</div>
+</center>
+<!---------------------- pc ------------------------>
+
+<!---------------------- sp ------------------------>
+<div class="ceralabo_pc_none">
+
+<a href="https://cores-ec.site/ceralabo/products/detail/52">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_06.png">
+</a>
+<a href="https://cores-ec.site/ceralabo/products/detail/55">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_07.png">
+</a>
+<a href="https://cores-ec.site/ceralabo/products/detail/53">
+ <img src="{{ app.config.user_data_urlpath }}/ceralabo/img_topics/02/topics02_08.png">
+</a>
+
+</div>
+<!---------------------- sp ------------------------>
+<!------------------------------------ ▲▲▲リンク▲▲▲ ------------------------------------>
+
+
+
+
+
+ <br>
+ <br>
+ <br>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

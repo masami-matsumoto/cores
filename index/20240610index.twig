@@ -1,0 +1,112 @@
+{#
+This file is part of EC-CUBE
+
+Copyright(c) EC-CUBE CO.,LTD. All Rights Reserved.
+
+http://www.ec-cube.co.jp/
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+#}
+{% extends 'default_frame.twig' %}
+
+{% set body_class = 'front_page' %}
+
+{% block stylesheet %}
+
+{% endblock %}
+
+{% block javascript %}
+    <script src="{{ asset('assets/js/top.js') }}"></script>
+    <script src="{{ asset('assets/js/modules/slick.min.js') }}"></script>
+    {{ include('Common/cart_js.twig') }}
+{% endblock javascript %}
+
+{% block main %}
+        <!-- TOPカルーセル block start.-->
+        <div class="p-slider-main u-m-section--small">
+            <ul class="p-slider-main__list js-slider-top">
+                <li class="p-slider-main__item">
+                    <a href="/ceralabo/user_data/topics25">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_bestcosme_sp.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_bestcosme_pc.jpg" alt="“ベストコスメ受賞”" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_bestcosme_pc.jpg" width="1600" height="633" decoding="async"/>
+                        </picture>
+                    </a>
+                </li>
+                <li class="p-slider-main__item">
+                    <a href="/ceralabo/products/detail/266">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_shampoo_re_banner_sp.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_shampoo_re_banner_pc.jpg" alt="シャンプーリニューアル" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_shampoo_re_banner_pc.jpg" width="1600" height="633" decoding="async"/>
+                        </picture></a>
+                </li>
+                <li class="p-slider-main__item">
+                    <a href="/ceralabo/user_data/topics29">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_serum_banner_sp.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_serum_banner_pc.jpg" alt="レチノール美容液" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_serum_banner_pc.jpg" width="1600" height="633" decoding="async"/>
+                        </picture></a>
+                </li>
+                <li class="p-slider-main__item">
+                    <a href="/ceralabo/products/detail/249">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_sensitive_milk_sp.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_sensitive_milk_pc.jpg" alt="セラキュア センシティブミルク" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_sensitive_milk_pc.jpg" width="1600" height="633" decoding="async"/>
+                        </picture>
+                    </a>
+                </li>
+                <li class="p-slider-main__item">
+                    <a href="/ceralabo/products/detail/250">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_shine_drip_renewal_sp.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_shine_drip_renewal_pc.jpg" alt="シャインドリップ（リニューアル品）" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_shine_drip_renewal_pc.jpg" width="1600" height="633" decoding="async"/>
+                        </picture>
+                    </a>
+                </li>
+                <li class="p-slider-main__item">
+                    <a href="/ceralabo/products/detail/237">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_skinwashclear_sp2.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_skinwashclear_pc2.jpg" alt="スキンウォッシュクリアリー" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_skinwashclear_pc2.jpg" width="1600" height="633" decoding="async"/>
+                        </picture>
+                    </a>
+                </li>
+                <li class="p-slider-main__item">
+                    <a href="/ceralabo/user_data/topics27">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_drip_sp_re02.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_drip_pc_re02.jpg" alt="セララボ初 薬用美白美容液" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_drip_pc_re02.jpg" width="1600" height="633" decoding="async"/>
+                        </picture>
+                    </a>
+                </li>
+                <li class="p-slider-main__item">
+                    <a href="/ceralabo/user_data/topics11">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_topics11_sp.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_topics11.jpg" alt="エイジングケア" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_topics11.jpg" width="1600" height="633" decoding="async"/>
+                        </picture>
+                    </a>
+                </li>
+                <li class="p-slider-main__item">
+                    <a href="/ceralabo/products/detail/145">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_2206_jerry_sp.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_2206_jerry.jpg" alt="センシティブジェリー" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_2206_jerry.jpg" width="1600" height="633" decoding="async"/>
+                        </picture>
+                    </a>
+                </li>
+                <li class="p-slider-main__item">
+                    <a href="/ceralabo/user_data/topics01">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_mv_02_sp.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_mv_02.jpg" alt="開発秘話" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_mv_02.jpg" width="1600" height="633" decoding="async"/>
+                        </picture>
+                    </a>
+                </li>
+                <li class="p-slider-main__item">
+                    <picture>
+                        <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_mv_05_sp.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_mv_05.jpg" alt="送料無料" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_mv_05.jpg" width="1600" height="633" decoding="async"/>
+                    </picture>
+                </li>
+                <li class="p-slider-main__item">
+                    <a href="https://page.line.me/762wsdbu?openQrModal=true" target="_blank" rel="noopener">
+                        <picture>
+                            <source srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_240119_line_sp.jpg" media="(max-width: 1023px)"/><img src="/html/user_data/assets/ceralabo/img_top/banner/img_top_240119_line.jpg" alt="line" srcset="/html/user_data/assets/ceralabo/img_top/banner/img_top_240119_line.jpg" width="1600" height="633" decoding="async"/>
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- TOPカルーセル block end.-->
+{% endblock %}
