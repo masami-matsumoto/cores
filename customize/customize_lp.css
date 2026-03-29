@@ -1,0 +1,4 @@
+/* 規格名を非表示にする */
+.specification-name {
+    display: none !important;
+}

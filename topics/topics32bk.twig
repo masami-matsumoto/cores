@@ -1,0 +1,511 @@
+{% extends 'default_frame.twig' %}
+
+{% block main %}
+        
+        <div class="main_only">
+          <div class="container-fluid inner no-padding">
+            <div id="main">
+              <div class="container-fluid">
+                <div id="feature01_box__body" class="row">
+                  <div id="feature01_box__body_inner" class="col-md-10 col-md-offset-1">
+        <style>
+								p {
+									line-height: 1.7em;
+								}
+								@media screen and (max-width: 767px) {
+			p {
+			   text-align: left;
+			}
+		}
+
+
+
+								a p {
+									color: #4D4D4D;
+								}
+
+								.topics_title {
+									text-align: center;
+									margin-bottom: 30px;
+								}
+
+								.img_pc {
+									width: 70%;
+									text-align: center;
+								}
+
+								.topics_img_item_pc {
+									width: 50%;
+									text-align: center;
+								}
+
+								.topics_text {
+									text-align: center;
+									margin: 50px 0;
+								}
+
+								.topics_text_sub {
+									text-align: justfy;
+									color: #a5a5a5;
+								}
+
+								.topics_text_item {
+									text-align: center;
+									color: #a5a5a5;
+								}
+
+
+								.under {
+									background: linear-gradient(transparent 50%, #CFDDF2 50%);
+								}
+
+								.center {
+									text-align: center;
+								}
+
+								.box19 {
+									position: relative;
+									padding: 0.25em 1em;
+									width: 350px;
+								}
+
+								.box19:before,
+								.box19:after {
+									content: '';
+									width: 20px;
+									height: 30px;
+									position: absolute;
+									display: inline-block;
+								}
+
+								.box19:before {
+									border-left: solid 1px #9fa0a0;
+									border-top: solid 1px #9fa0a0;
+									top: 0;
+									left: 0;
+								}
+
+								.box19:after {
+									border-right: solid 1px #9fa0a0;
+									border-bottom: solid 1px #9fa0a0;
+									bottom: 0;
+									right: 0;
+								}
+
+								.box19 p {
+									margin: 0;
+									padding: 0;
+								}
+
+
+								.box2 {
+									padding: 0.5em 1em;
+									margin: 2em 0;
+									font-weight: normal;
+									color: #ffffff;
+									/*文字色*/
+									background: #7A7A7A;
+									border: solid 3px #7A7A7A;
+									/*線*/
+									border-radius: 15px;
+									/*角の丸み*/
+									width: 350px;
+								}
+
+								.box2 p {
+									margin: 0;
+									padding: 5px;
+								}
+
+
+								.box_kakoi {
+									padding: 0.5em 1em;
+									margin: 2em 0;
+									border: solid 1px #bababa;
+									/*線*/
+									border-radius: 10px;
+									/*角の丸み*/
+								}
+
+								.box_kakoi p {
+									margin: 0;
+									padding: 0;
+								}
+
+								.btn-item-link a {
+									display: block;
+									margin: 1em auto;
+									padding: 10px;
+									background: #4D4D4D;
+									border-radius: 50px;
+
+								}
+
+								@media screen and (min-width: 768px) {
+									.btn-item-link {
+										width: 50%;
+
+									}
+								}
+
+								.btn-item-link a {
+									color: #FFF;
+									font-weight: bold;
+									text-decoration: none;
+									text-align: center;
+								}
+								.box_chui {
+			padding: 0.5em 1em;
+			margin: 2em 0;
+			font-weight: bold;
+			border: solid 3px #ff0000;
+		}
+
+		.box_chui p {
+			margin: 0;
+			padding: 0;
+			color: #ff0000;
+		}
+
+		.box_free {
+			margin: 2em 0;
+		}
+
+
+		.index_pnt {
+			width: 150px;
+		}
+
+		@media screen and (max-width: 767px) {
+			.index_pnt {
+				width: 120px;
+			}
+		}
+
+		.box_pnt {
+			position: relative;
+			padding: 0.25em 1em;
+			border: solid 1px #4D4D4D;
+			padding: 30px;
+		}
+
+		.box_pnt h1 {
+			font-size: 1.4em;
+		}
+
+		@media screen and (max-width: 767px) {
+			#item_detail .freearea p {
+				margin-bottom: 40px;
+			}
+		}
+
+		.btn-item-link a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 1em auto;
+			padding: 10px 30px;
+			background: #de5d50;
+			border-radius: .4rem;
+						}
+						.btn-item-link a::after {
+							content: '';
+							width: 10px;
+							height: 10px;
+							border-top: 2px solid #fff;
+							border-right: 2px solid #fff;
+							transform: rotate(45deg);
+							margin-left: 16px;
+						}				
+
+		@media screen and (min-width: 768px) {
+			.btn-item-link {
+				max-width: 300px;
+
+			}
+		}
+
+		.btn-item-link a {
+			color: #FFF;
+			font-weight: bold;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		ul.cp_list {
+			padding: 0.5em;
+			list-style-type: none;
+			text-align: left;
+			max-width: 34em;
+			margin: 0 auto;
+		}
+
+		ul.cp_list li {
+			position: relative;
+			padding-left: 25px;
+			/*border-bottom: solid 1px #e5e5e5;*/
+			margin-bottom: 0.5em;
+			line-height: 2em;
+		}
+
+		ul.cp_list li:before {
+			content: "";
+			position: absolute;
+			top: .1em;
+			left: 0;
+			-webkit-transform: rotate(50deg);
+			-ms-transform: rotate(50deg);
+			transform: rotate(50deg);
+			width: 8px;
+			height: 18px;
+			border-right: 2px solid #06c755;
+			border-bottom: 2px solid #06c755;
+		}
+
+
+		.ul-align-center {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.kaihatsu .ceralabo_accordion dt a::before {
+			display: none;
+		}
+
+		.sample_button:hover {
+			opacity: 0.6;
+		}
+
+		.ceralabo_accordion dt a::before {
+			display: none;
+		}
+
+
+		a[href="#faq"]:link,
+		a[href="#faq"]:visited {
+			color: #4d4d4d;
+		}
+
+		a[href="#faq"]:hover {
+			color: #9c9b9b;
+		}
+
+		a[href="#movie"]:link,
+		a[href="#movie"]:visited {
+			color: #4d4d4d;
+		}
+
+		a[href="#movie"]:hover {
+			color: #9c9b9b;
+		}
+						.topics_inner_blue {
+							background-color: #CFDDF2;
+							padding: 20px;
+							border-radius: 20px;
+max-width: 540px;
+						}
+						.topics_inner_red {
+							background-color: #F4BDBE;
+							padding: 20px;
+							border-radius: 20px;
+max-width: 540px;
+						}
+						.topics_inner_blue h2 {
+							color: #190B75;
+							font-size: 1.8em;
+						}
+						.topics_inner_red h2 {
+							color :#B90A0D;
+							font-size: 1.8em;
+						}
+						.topics_flex {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						.topics_flex_img1 {
+							flex: 1
+						}
+						.topics_flex_img2 {
+							width: 50%;
+						}
+						@media screen and (min-width: 768px) {
+.img-item-link {
+    width: 50%;
+}
+						}
+						 /* 追加CSS */
+						.ceralabo_ol{
+                            margin-bottom: 100px;
+							text-align: left;
+							border: double 3px #4D4D4D;
+                            /*二重線 太さ 色*/
+                            padding: 20px;
+                        }
+						
+						.ceralabo_ol h2 {
+							margin: 0;
+							font-size: 1.6rem;
+						}
+
+                        .ceralabo_ol ol li {
+                            line-height: 1.5;
+                            padding: 5px 0;
+                        }
+
+                        .ceralabo_ol ol li a {
+                            text-decoration-line: none;
+							color: #4D4D4D;
+                        }
+
+							.ceralabo_ol_sub ol {
+                            padding: 10px;
+                        }
+						
+						.topics_img {
+							width: 100%;
+						}
+						
+						.topics_accordion {
+							max-width: 640px;
+						}
+						
+						.topics_faq .ceralabo_accordion dd, .topics_faq .ceralabo_accordion dt {
+							text-align: left;
+						}
+						
+						.topics_title-main {
+							color: #06c755;
+							line-height: 1.2;
+							letter-spacing: 0.05em;
+						}
+						
+						.topics_title-main > span {
+							display: block;
+							font-size: 0.8em;
+							line-height: 1.4;
+							margin-top: 1rem;
+							letter-spacing:0.1em;
+						}
+						
+						.topics_ol {
+							padding-left: 0;
+						}
+						
+						.topics_ol li {
+							margin-bottom: 4rem;
+						}
+						
+						.topics_ol img {
+							margin-top: 4rem;
+						}
+						
+							.user_data h1 {
+						    font-size: 2em;
+						}
+						
+						@media screen and (min-width: 768px) {
+.topics_img {
+    width: 50%;
+}
+							.topics_title-main {
+								line-height: 1.6;
+							}
+							
+								.user_data h1 {
+						    font-size: 2em;
+						}
+							.topics_title-main > span {
+							line-height: 1;
+						}
+						}
+							</style>
+                    <center>
+                      <h1 class="topics_title-main ceralabo_pc"> LINE ID連携でお買い物をもっと便利に!<span>あなたにぴったりのスキンケアが見つかる◎</span></h1>
+                      <h1 class="topics_title-main ceralabo_pc_none"> LINE ID連携で<br>
+                        お買い物をもっと便利に!<span>あなたにぴったりの<br>
+                        スキンケアが見つかる◎</span></h1>
+                    </center>
+                    <!-------------------------- ▼▼▼▼コンテンツ▼▼▼▼ ------------------------------------>
+                    <center style="margin-bottom:100px;">
+                    <picture>
+                              <source srcset="{{ asset('assets/ceralabo/img_topics/32/topics_line_point.png', 'user_data') }}" media="(min-width: 768px)">
+                              <source>
+                              <img src="{{ asset('assets/ceralabo/img_topics/32/topics_line_point_sp.png', 'user_data') }}" alt="6つのポイント"/>
+                    </picture>
+                      <h2>6つのポイント</h2>
+                      <div class="box_free">
+                        <ul class="cp_list left">
+                          <li>LINEアカウントで簡単ログイン</li>
+                          <li>発送のお知らせが届く</li>
+                          <li>誕生日の月初めに<span style="color: red;">お誕生日クーポン</span>が届く*</li>
+                          <li>セララボスタッフによる使用感レビュー、おすすめの商品を紹介</li>
+                          <li>かんたん肌チェックでおすすめのトライアルセットがわかる</li>
+                          <li>スキンケア相談会（お近くの店舗・オンライン）のお知らせが届く</li>
+                        </ul>
+                        <p style="color: #a9a9a9; font-size: 1.2rem;">*オンラインストア会員登録時に生年月日のご登録が必須となります<br>
+                          *お誕生日クーポンは1年に1回届きます<br>
+                          *オンラインストアで2,000円以上のご注文で使える300円オフクーポンになります </p>
+                      </div>
+                      <h2 class="topics_title">LINE ID連携方法</h2>
+                      <ol class="topics_ol">
+                        <li>①セララボ公式オンラインストアのログイン画面より<br>
+                          メールアドレスとパスワードを入力してログイン<br>
+                          ※事前にオンラインストアの新規会員登録をお願いいたします<br>
+                          <img src="/html/user_data/assets/ceralabo/img_topics/32/topics_line1test.png" class="topics_img" alt=""/><br>
+                          <span  style="color: #a9a9a9; font-size: 1.2rem;">※こちらはスマートフォンからの設定画面です。パソコンからの設定画面とは異なりますのでご注意ください。</span> </li>
+                        <li>②マイページの「会員情報」をタップ<br>
+                          <img src="/html/user_data/assets/ceralabo/img_topics/32/topics_line2test.png" class="topics_img" alt=""/> </li>
+                        <li>③「LINEで登録する」をタップ<br>
+                          <img src="/html/user_data/assets/ceralabo/img_topics/32/topics_line3test.png" class="topics_img" alt=""/> </li>
+                        <li>④「許可する」をタップ<br>
+                          <img src="/html/user_data/assets/ceralabo/img_topics/32/topics_line4test.png" class="topics_img" alt=""/></li>
+                        <li>⑤マイページに切り替わり、連携済みと表示される<br>
+                          <span style="color: red;">※ここで画面を閉じたり、別のページに移動しないでください</span><br>
+                          <img src="/html/user_data/assets/ceralabo/img_topics/32/topics_line5test.png" class="topics_img" alt=""/></li>
+                        <li>⑥下までスクロールし「変更を保存する」をタップ<br>
+                          これでLINE ID連携が完了です。 <br>
+                          <img src="/html/user_data/assets/ceralabo/img_topics/32/topics_line6test.png" class="topics_img" alt=""/></li>
+                      </ol>
+                      <div class="btn-item-link" style="margin: 80px auto;"> <a href="https://cores-ec.site/mypage/login"> ログインまたは会員登録して<br>
+                        LINEID連携する</a> </div>	
+                      <div class="topics_faq">
+                        <h2 class="topics_title">LINE ID連携に関するQ＆A</h2>
+                         <dl class="ceralabo_accordion" data-accordion>
+							<dt><a href="#">Q LINE ID連携とは何ですか？ <i class="ceralabo_accordion_icon"></i></a> 
+                            </dt>
+                            <dd>A<br>
+                              LINE ID連携とはLINEアカウントと、セララボ公式オンラインストアの会員IDを連携させることです。<br>
+                              LINE ID連携により、セララボLINE公式アカウントよりお誕生日クーポンや、お客様にマッチした情報などを配信いたします。<br>
+                              また、LINEアカウントでセララボ公式オンラインストアにログインができるようになります。<br>
+                              <br>
+                              ※LLINE ID連携には、セララボ公式オンラインストアの会員登録・LINEアプリのダウンロード・セララボ公式LINEアカウントの友だち登録が必要です。<br>
+                              ※LINEアカウントに登録されているメールアドレス、パスワードはLINEアプリにてご確認ください。 </dd>
+                            <dt><a href="#">Q LINEでログインするには？ <i class="ceralabo_accordion_icon"></i></a> </dt>
+                            <dd>A<br>
+                              LINEアカウントでログインするには、LINEアカウントとセララボ公式オンラインストアの会員IDの連携が必要です。<br>
+                              LINE ID連携が完了している方はログインページの「LINEでログイン」ボタンより、オンラインストアにログインいただけます。 </dd>
+                            <dt><a href="#">Q  LINE連携・LINEログインができません  <i class="ceralabo_accordion_icon"></i></a> </dt>
+                            <dd>A<br>
+                              お使いのLINEアプリが最新版ではない場合、連携できないことがございます。<br>
+                              App store・Google Playストアにて、最新バージョンにアップデートされているかご確認ください。<br>
+                              <br>
+                              ＜LINEヤフープライバシーポリシーへのご同意に関して＞<br>
+                              2023年10月にLINEとヤフーが統合し、新たなプライバシーポリシーが導入されています。LINEのご利用に際しては、プライバシーポリシーに同意されているかどうかもあわせてご確認ください。 <br>
+                              <br>
+                              ※LINEへのログイン時に入力するメールアドレスやパスワードがご不明の場合は、LINEアプリの「設定」→「アカウント」にてご確認ください。<br>
+                              ※一部の機種端末やOSのバージョンによっては「LINE ID連携」に対応していない場合がございます。 </dd>
+                          </dl>
+                      </div>
+                    </center>
+                    <!-------------------------- ▲▲▲▲コンテンツ▲▲▲▲ ------------------------------------> 
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{% endblock %}

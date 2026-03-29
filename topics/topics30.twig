@@ -1,0 +1,671 @@
+{% extends 'default_frame.twig' %}
+
+{% block main %}
+        <div class="main_only">
+          <div class="container-fluid inner no-padding">
+            <div id="main">
+              <div class="container-fluid">
+                <div id="feature01_box__body" class="row">
+                  <div id="feature01_box__body_inner" class="col-md-10 col-md-offset-1">
+                                    <style>
+								p {
+									line-height: 1.7em;
+								}
+								@media screen and (max-width: 767px) {
+			p {
+			   text-align: left;
+			}
+		}
+
+
+
+								a p {
+									color: #4D4D4D;
+								}
+
+								.topics_title {
+									margin-bottom: 30px;
+								}
+
+								.img_pc {
+									width: 70%;
+									text-align: center;
+								}
+
+								.topics_img_item_pc {
+									width: 50%;
+									text-align: center;
+								}
+
+								.topics_text {
+									margin: 50px 0;
+								}
+
+								.topics_text_sub {
+									text-align: justfy;
+									color: #a5a5a5;
+								}
+
+								.topics_text_item {
+									text-align: center;
+									color: #a5a5a5;
+								}
+
+
+								.under {
+									background: linear-gradient(transparent 50%, #CFDDF2 50%);
+								}
+
+								.center {
+									text-align: center;
+								}
+
+								.box19 {
+									position: relative;
+									padding: 0.25em 1em;
+									width: 350px;
+								}
+
+								.box19:before,
+								.box19:after {
+									content: '';
+									width: 20px;
+									height: 30px;
+									position: absolute;
+									display: inline-block;
+								}
+
+								.box19:before {
+									border-left: solid 1px #9fa0a0;
+									border-top: solid 1px #9fa0a0;
+									top: 0;
+									left: 0;
+								}
+
+								.box19:after {
+									border-right: solid 1px #9fa0a0;
+									border-bottom: solid 1px #9fa0a0;
+									bottom: 0;
+									right: 0;
+								}
+
+								.box19 p {
+									margin: 0;
+									padding: 0;
+								}
+
+
+								.box2 {
+									padding: 0.5em 1em;
+									margin: 2em 0;
+									font-weight: normal;
+									color: #ffffff;
+									/*文字色*/
+									background: #7A7A7A;
+									border: solid 3px #7A7A7A;
+									/*線*/
+									border-radius: 15px;
+									/*角の丸み*/
+									width: 350px;
+								}
+
+								.box2 p {
+									margin: 0;
+									padding: 5px;
+								}
+
+
+								.box_kakoi {
+									padding: 0.5em 1em;
+									margin: 2em 0;
+									border: solid 1px #bababa;
+									/*線*/
+									border-radius: 10px;
+									/*角の丸み*/
+								}
+
+								.box_kakoi p {
+									margin: 0;
+									padding: 0;
+								}
+
+								.btn-item-link {
+									display: block;
+									margin: 1em auto;
+									padding: 10px;
+									background: #4D4D4D;
+									border-radius: 50px;
+
+								}
+
+								@media screen and (min-width: 768px) {
+									.btn-item-link {
+										width: 50%;
+
+									}
+								}
+
+								.btn-item-link a {
+									color: #FFF;
+									font-weight: bold;
+									text-decoration: none;
+									display: inline-block; /* 追加 */
+                                    width: 100%; /* 追加 */
+									text-align:center;
+								}
+								.box_chui {
+			padding: 0.5em 1em;
+			margin: 2em 0;
+			font-weight: bold;
+			border: solid 3px #ff0000;
+		}
+
+		.box_chui p {
+			margin: 0;
+			padding: 0;
+			color: #ff0000;
+		}
+
+		.box_free {
+			margin: 4em 0;
+		}
+
+
+		.index_pnt {
+			width: 150px;
+		}
+
+		@media screen and (max-width: 767px) {
+			.index_pnt {
+				width: 120px;
+			}
+		}
+
+		.box_pnt {
+			position: relative;
+			padding: 0.25em 1em;
+			border: solid 1px #4D4D4D;
+			padding: 30px;
+			text-align: center;
+		}
+
+		.box_pnt h1 {
+			font-size: 1.4em;
+		}
+
+		@media screen and (max-width: 767px) {
+			#item_detail .freearea p {
+				margin-bottom: 40px;
+			}
+		}
+
+		.btn-item-link {
+			display: block;
+			margin: 1em auto;
+			padding: 20px;
+			background: #224F83;
+			/*border-radius: 50px;*/
+
+		}
+
+		@media screen and (min-width: 768px) {
+			.btn-item-link {
+				width: 50%;
+
+			}
+		}
+
+		.btn-item-link a {
+			color: #FFF;
+			font-weight: bold;
+			text-decoration: none;
+			display: inline-block; /* 追加 */
+            width: 100%; /* 追加 */
+			text-align:center;
+		}
+
+		ul.cp_list {
+			padding: 0.5em;
+			list-style-type: none;
+			text-align: center;
+		}
+
+		ul.cp_list li {
+			display: inline-block; /* liをインラインブロックに */
+            text-align: left; /* liの中身を左揃え */
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 0.5em;
+            line-height: 2em;
+            width: 100%; /* liが親の幅に対してフル幅を取るように */
+            box-sizing: border-box; /* paddingを含めて幅を計算 */
+		}
+
+		ul.cp_list li:before {
+			content: "";
+			position: absolute;
+			top: .1em;
+			left: 0;
+			-webkit-transform: rotate(50deg);
+			-ms-transform: rotate(50deg);
+			transform: rotate(50deg);
+			width: 8px;
+			height: 18px;
+			border-right: 1px solid #919191;
+			border-bottom: 1px solid #919191;
+		}
+
+
+		.ul-align-center {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.kaihatsu .ceralabo_accordion dt a::before {
+			display: none;
+		}
+
+		.sample_button:hover {
+			opacity: 0.6;
+		}
+
+		.ceralabo_accordion dt a::before {
+			display: none;
+		}
+
+
+		a[href="#faq"]:link,
+		a[href="#faq"]:visited {
+			color: #4d4d4d;
+		}
+
+		a[href="#faq"]:hover {
+			color: #9c9b9b;
+		}
+
+		a[href="#movie"]:link,
+		a[href="#movie"]:visited {
+			color: #4d4d4d;
+		}
+
+		a[href="#movie"]:hover {
+			color: #9c9b9b;
+		}
+						.topics_inner_blue {
+							background-color: #CFDDF2;
+							padding: 20px;
+							border-radius: 20px;
+max-width: 540px;
+						}
+						.topics_inner_red {
+							background-color: #F4BDBE;
+							padding: 20px;
+							border-radius: 20px;
+max-width: 540px;
+						}
+						.topics_inner_blue h2 {
+							color: #190B75;
+							font-size: 1.8em;
+						}
+						.topics_inner_red h2 {
+							color :#B90A0D;
+							font-size: 1.8em;
+						}
+						.topics_flex {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						.topics_flex_img1 {
+							flex: 1
+						}
+						.topics_flex_img2 {
+							width: 50%;
+						}
+						@media screen and (min-width: 768px) {
+.img-item-link {
+    width: 50%;
+}
+						}
+						 /* 追加CSS */
+						.ceralabo_ol{
+                            margin-bottom: 30px;
+							text-align: left;
+							border: double 3px #4D4D4D;
+                            /*二重線 太さ 色*/
+                            padding: 20px;
+                        }
+						
+						.ceralabo_ol h2 {
+							margin: 0;
+							font-size: 1.6rem;
+						}
+
+                        .ceralabo_ol ol li {
+                            line-height: 1.5;
+                            padding: 5px 0;
+                        }
+
+                        .ceralabo_ol ol li a {
+                            text-decoration-line: none;
+							color: #4D4D4D;
+                        }
+
+							.ceralabo_ol_sub ol {
+                            padding: 10px;
+                        }
+						
+						.topics_img {
+							width: 100%;
+						}
+						
+						.topics_accordion {
+							max-width: 640px;
+							margin: 0 auto;
+						}
+						
+						.topics_accordion dd {
+							text-align: justify;
+						}
+						
+						@media screen and (min-width: 768px) {
+.topics_img {
+    width: 70%;
+	margin: 0 auto;
+}
+						}
+						{# 目次改行のためのCSS #}
+						@media screen and (max-width: 767px) {
+                             .ceralabo_ol ol li {
+                                 text-indent: -20px; /* リストマーカーを削除するための負のインデント */
+                                 padding-left: 20px; /* テキストのインデント */
+                              }
+  
+                            .ceralabo_ol ol li::marker {
+                                 content: ''; /* リストマーカーを隠す */
+                              }
+
+                            .ceralabo_ol ol li a {
+                                 display: inline-block;
+                                 margin-left: 20px; /* テキストのインデント（必要に応じて調整） */
+                              }
+                            }
+
+							/* ボタンのcss デフォルトの画像のスタイル */
+                            .pc-picture img {
+                                 width: 100%;
+                                 display: block; /* 画像をブロック要素として扱う */
+                                 margin: 0 auto; /* 左右の余白を自動で調整して中央配置 */
+                            }
+
+                            /* PCのみ（幅768px以上）のスタイル */
+                        @media (min-width: 768px) {
+                            .pc-picture img {
+                                 width: 45%;
+                              }
+                            }
+							</style>
+                   <div>
+                      <h1 class="topics_title"> セラヴェールスキンウォッシュシリーズのご紹介</h1>
+                    </div>
+                    
+                    <!-------------------------- ▼▼▼▼画像▼▼▼▼ -------------------------->
+                    <div style="margin-bottom:50px;" class="topics_img">
+                      <img src="{{ asset('assets/ceralabo/img_topics/30/topics07_02.png', 'user_data') }}" alt="">
+                    </div>
+                    <!-------------------------- ▲▲▲▲画像▲▲▲▲ --------------------------> 
+                    <!-------------------------- ▼▼▼▼コンテンツ▼▼▼▼ ------------------------------------>
+                    <div style="margin-bottom:100px;">
+                      <p class="topics_text"> セララボが提唱する「オフスキンケア」の根幹となる、洗浄。<br>
+                        <br>
+                        セラヴェールスキンウォッシュシリーズは、肌本来の保湿成分を落としすぎない設計の全身用洗浄料として、セララボを支えてきたロングセラー商品です。<br>
+                        2023年には新たに、インデュースよりもすっきりと洗える「クリアリー」が仲間入りしました。<br>
+                        <br>
+                        そしてこれまでに多くのご要望をいただいておりました泡タイプが、2024年6月より新登場しました。<br>
+                        <br>
+                        こちらの記事では、セラヴェールスキンウォッシュシリーズの選び方・シーンに合わせた使い分けについて、詳しくご紹介いたします。 </p>
+                      <div class="ceralabo_ol">
+                        <h2>目次</h2>
+                        <ol>
+                          <li><a href="#section01">1.	オフスキンケアとは？</a></li>
+                          <li><a href="#section02">2.	セラヴェールスキンウォッシュシリーズとは？</a></li>
+                          <li><a href="#section02_1">└インデュース</a></li>
+                          <li><a href="#section02_2">└エクストラ</a></li>
+                          <li><a href="#section02_3">└クリアリー</a></li>
+                          <li><a href="#section03">3.	肌に変化に合わせてスキンウォッシュを変えてみましょう</a></li>
+                          <li><a href="#section04">4.	リキッドタイプ・泡タイプの使い分け</a></li>
+                          <li><a href="#section05">5.	スキンウォッシュの選び方</a></li>
+                          <li><a href="#section06">6.	洗浄の見直しで、すこやかな肌づくりを</a></li>
+                        </ol>
+                      </div>
+                      <div id="section01">
+                        <h1 class="topics_title">オフスキンケアとは？</h1>
+                        <p>「オフスキンケア」は、洗浄力を見直すという、とてもシンプルなスキンケア方法です。<br>
+                          <br>
+                          セララボでは、多くの肌トラブルの根本原因が「洗いすぎ」にあると考え、洗浄力を穏やかにすることを推奨しています。<br>
+                          <br>
+                          洗浄力の見直しにより、肌本来の保湿成分が守られ、肌が乾燥しにくくなることで、バリア機能も整いやすくなると考えています。<br>
+                          <br>
+                          その時々の肌状態にあわせて必要最低限のスキンケアを心がけることで、スキンケアに頼らない肌へと導きます。<br>
+                          <br>
+                          「スキンケアが徐々に不要になる」という考え方から、「オフスキンケア」と呼ぶことにしました。 </p>
+                        <p><a href="https://cores-ec.site/ceralabo/user_data/topics07">オフスキンケアの詳細はこちら</a></p>
+                      </div>
+                      <div id="section02" style="margin-top: 80px;">
+                        <h1 class="topics_title">セラヴェールスキンウォッシュシリーズとは？</h1>
+                        <p>オフスキンケアをスムーズに行うための重要なアイテムが、セラヴェールスキンウォッシュです。<br>
+                          <br>
+                          肌本来の保湿成分を落としすぎない設計で、やさしい洗浄力の洗顔・ボディ兼用ソープです。<br>
+                          <br>
+                          「洗いすぎ」による乾燥を防ぎます。<br>
+                          <br>
+                          「リキッドタイプ」「泡タイプ」の2タイプを展開し、それぞれ3種類の洗浄力から自分の肌に合った洗浄力を選ぶことができます。</p>
+                        <!-------------------------- ▼▼▼▼画像▼▼▼▼ -------------------------->
+                        <div style="margin-bottom:50px;"> <img src="{{ asset('assets/ceralabo/img_topics/30/17.jpg', 'user_data') }}" class="topics_img" alt=""> </div>
+                        <!-------------------------- ▲▲▲▲画像▲▲▲▲ -------------------------->
+                        <div id="section02_1" class="box_pnt" style="margin-bottom:50px;">
+                          <h2>インデュース</h2>
+                          <p>セララボを<span class="under">初めて使う方</span>や、<span class="under">初めて洗浄の見直しを行う方</span>におすすめです。<br>
+                            <br>
+                            エクストラ・クリアリーの中間の洗浄力です。<br>
+                            <br>
+                            弱酸性の酸性石けん(カルボン酸)系洗浄料で、ゆらぎにくいなめらか肌へと導きます。 </p>
+							<p><a href="https://cores-ec.site/ceralabo/products/detail/55"><picture class="pc-picture">
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/30/in_eki_btn.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/30/in_eki_btn_sp.png', 'user_data') }}" alt="インデュース　リキッドタイプ"/>
+						  </picture></a></p>
+						  <p><a href="https://cores-ec.site/ceralabo/products/detail/1112"><picture class="pc-picture">
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/30/in_awa_btn.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/30/in_awa_btn_sp.png', 'user_data') }}" alt="インデュース　泡タイプ"/>
+						  </picture></a></p>
+                          <div class="box_free">
+                            <h3 class="main_title">◆特にこんな肌におすすめ◆</h3>
+                            <ul class="cp_list left ul-align-center">
+                              <li style="max-width: 22rem;">乾燥やごわつきがある</li>
+                              <li style="max-width: 22rem;">ざらつきがある</li>
+                              <li style="max-width: 22rem;">ニキビができやすい</li>
+                            </ul>
+                          </div>
+                          <div class="topics_accordion">
+                            <dl class="ceralabo_accordion" data-accordion>
+                              <dt><a href="#">全成分 <i class="ceralabo_accordion_icon"></i></a></dt>
+                              <dd>◾️リキッドタイプ<br>水、ラウレス－６カルボン酸Na、コカミドDEA、ラウロイルグルタミン酸TEA、コカミドプロピルベタイン、ラウラミドDEA、ペンチレングリコール、ラウリン酸BG、ヒアルロン酸Na、グリチルリチン酸２K、グリセリン、塩化Na、EDTA－２Na、クエン酸、エチルヘキシルグリセリン、フェノキシエタノール<br><br>
+							      ◾️泡タイプ<br>水、ラウレス－６カルボン酸Na、コカミドDEA、ラウロイルグルタミン酸TEA、コカミドプロピルベタイン、ラウラミドDEA、ペンチレングリコール、ラウリン酸BG、ヒアルロン酸Na、グリチルリチン酸２K、グリセリン、塩化Na、EDTA－２Na、エチルヘキシルグリセリン、メチルパラベン</dd>
+                            </dl>
+                          </div>
+                        </div>
+                        <div id="section02_2" class="box_pnt"  style="margin-bottom:50px;">
+                          <h2>エクストラ</h2>
+                          <p>スキンウォッシュシリーズの中で、最も洗浄力の低い「エクストラ」。<br>
+                            <br>
+                            <span class="under">インデュースを使って乾燥やつっぱりを感じる方</span>におすすめです。<br>
+                            <br>
+                            弱酸性のアミノ系洗浄料で、しっとりとした、すこやかな肌へと導きます。</p>
+							<p><a href="https://cores-ec.site/ceralabo/products/detail/56"><picture class="pc-picture">
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/30/ex_eki_btn.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/30/ex_eki_btn_sp.png', 'user_data') }}" alt="エクストラ　リキッドタイプ"/>
+						  </picture></a></p>
+						  <p><a href="https://cores-ec.site/ceralabo/products/detail/1113"><picture class="pc-picture">
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/30/ex_awa_btn.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/30/ex_awa_btn_sp.png', 'user_data') }}" alt="エクストラ　泡タイプ"/>
+						  </picture></a></p>
+                          <div class="box_free">
+                            <h3 class="main_title">◆こんな方におすすめ◆</h3>
+                            <ul class="cp_list left ul-align-center">
+                              <li style="max-width: 30rem;">インデュースを使って乾燥を感じる</li>
+                              <li style="max-width: 30rem;">しっとりした洗い上がりが好み</li>
+                            </ul>
+                          </div>
+                          <div class="topics_accordion">
+                            <dl class="ceralabo_accordion" data-accordion>
+                              <dt><a href="#">全成分 <i class="ceralabo_accordion_icon"></i></a></dt>
+                              <dd>◾️リキッドタイプ<br>水、ラウロイルグルタミン酸TEA、ラウロイルメチルアラニンNa、コカミドDEA、コカミドプロピルベタイン、ラウラミドDEA、ペンチレングリコール、ラウリン酸BG、ヒアルロン酸Na、グリチルリチン酸２K、グリセリン、塩化Na、EDTA－２Na、クエン酸、エチルヘキシルグリセリン、フェノキシエタノール<br><br>
+							  ◾️泡タイプ<br>水、ラウロイルメチルアラニンNa、ラウロイルグルタミン酸TEA、コカミドDEA、コカミドプロピルベタイン、ラウラミドDEA、ペンチレングリコール、ラウリン酸BG、ヒアルロン酸Na、グリチルリチン酸２K、グリセリン、塩化Na、EDTA－２Na、エチルヘキシルグリセリン、メチルパラベン</dd>
+                            </dl>
+                          </div>
+                        </div>
+                        <div id="section02_3" class="box_pnt" style="margin-bottom:50px;">
+                          <h2>クリアリー</h2>
+                          <p>スキンウォッシュシリーズの中で、最も洗浄力の高い「クリアリー」。<br>
+                            <br>
+                            インデュースよりも<span class="under">すっきりと洗い上げたい方</span>や、<span class="under">インデュースを使うとべたつきを感じやすい方</span>におすすめです。<br>
+                            <br>
+                            弱酸性のコハク酸系洗浄料で、夏場のべたつく季節や、<span class="under">メンズ</span>にも使いやすくさっぱりと洗浄できます。</p>
+							<p><a href="https://cores-ec.site/ceralabo/products/detail/237"><picture class="pc-picture">
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/30/cl_eki_btn.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/30/cl_eki_btn_sp.png', 'user_data') }}" alt="クリアリー　リキッドタイプ"/>
+						  </picture></a></p>
+						  <p><a href="https://cores-ec.site/ceralabo/products/detail/1114"><picture class="pc-picture">
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/30/cl_awa_btn.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/30/cl_awa_btn_sp.png', 'user_data') }}" alt="クリアリー　泡タイプ"/>
+						  </picture></a></p>
+                          <div class="box_free">
+                            <h3 class="main_title">◆こんな肌におすすめ◆</h3>
+                            <ul class="cp_list left ul-align-center">
+                              <li style="max-width: 22rem;">毛穴のざらつきがある</li>
+                              <li style="max-width: 22rem;">べたつきやテカリがある</li>
+                              <li style="max-width: 22rem;">ニキビができやすい</li>
+                            </ul>
+                          </div>
+                          <div class="topics_accordion">
+                            <dl class="ceralabo_accordion" data-accordion>
+                              <dt><a href="#">全成分 <i class="ceralabo_accordion_icon"></i></a></dt>
+                              <dd>◾️リキッドタイプ<br>水、スルホコハク酸ラウレス２Na、コカミドDEA、ココイルグルタミン酸TEA、 コカミドプロピルベタイン、ラウラミドDEA、ラウリン酸BG、ヒアルロン酸Na、グリチルリチン酸２K、塩化Na、EDTA－２Na、フェノキシエタノール、メチルパラベン<br><br>
+							  ◾️泡タイプ<br>水、スルホコハク酸ラウレス２Na、コカミドDEA、ココイルグルタミン酸TEA、コカミドプロピルベタイン、ラウラミドDEA、ヒアルロン酸Na、グリチルリチン酸２K、塩化Na、EDTA－２Na、フェノキシエタノール、メチルパラベン</dd>
+                            </dl>
+                          </div>
+                        </div>
+                        <p> お試ししたい方に！<br>
+                          セラヴェールシリーズのトライアルセットもご用意しています</p>
+                        <div style="margin-bottom: 80px;"> 
+						<a href="https://cores-ec.site/ceralabo/products/detail/1116"><picture class="pc-picture"> 
+						<source srcset="{{ asset('assets/ceralabo/img_topics/30/btn_trial_miniset.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/30/btn_trial_miniset_sp.png', 'user_data') }}" alt="トライアルセット" style="width:100%;"/>
+						  </picture></a> 
+						</div>
+                      </div>
+                      <div id="section03">
+                        <h1 class="topics_title">肌状態に合わせてスキンウォッシュを変えてみましょう</h1>
+                        <p>オフスキンケアをしていると、肌の変化を感じることがあります。<br>
+                          <br>
+                          その時の肌状態に合わせて、スキンウォッシュを使い分けましょう。 </p>
+                        <div style="margin-top: 4rem;">
+                          <picture>
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/30/img_In_4.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/30/img_In_4_sp.png', 'user_data') }}" alt="肌にこんな変化を感じたら、スキンウォッシュを変えてみましょう"/>
+						  </picture>
+                        </div>
+                        <div class="btn-item-link" style="margin: 80px auto;"> <a href="https://cores-ec.site/ceralabo/user_data/topics31"> スキンウォッシュの肌状態に合わせた使い方について、より詳しく知りたい方はこちら </a> </div>
+                      </div>
+                      <div id="section04">
+                        <h1 class="topics_title">リキッドタイプ・泡タイプの使い分け</h1>
+                        <p>スキンウォッシュシリーズでは、洗浄力の他に、ライフスタイルやシーンに合わせて選べるよう、リキッドタイプ・泡タイプの2タイプを展開しています。<br>
+                          <br>
+                          基本的には、顔も身体も全身リキッドタイプのご使用を推奨しております。<br>リキッドタイプは、コスパがよいだけではなく、薄めて使うことで肌への刺激性も調整することができます。しかし、うまく泡立てることができない方や時間がないという方には、より使いやすい泡タイプをおすすめします。</p>
+                        <div>
+						<picture>
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/30/quality.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/30/quality_sp.png', 'user_data') }}" alt="特徴メリッドデメリッド"/>
+						  </picture>
+						<P>それぞれの特徴を踏まえて、ご自身に合った使い方をしてください。</p>
+                          <h2>例えば、こんな使い方がおすすめです。</h2>
+                           <div style="margin-top: 4rem;">
+                            <picture>
+                              <source srcset="{{ asset('assets/ceralabo/img_topics/30/topics_skinwash03.png', 'user_data') }}" media="(min-width: 768px)">
+                              <source>
+                              <img src="{{ asset('assets/ceralabo/img_topics/30/topics_skinwash03_sp.png', 'user_data') }}" alt="パターン①　朝晩の使い分け"/></picture>
+                          </div>
+                          <div style="margin-top: 4rem;">
+                            <picture>
+                              <source srcset="{{ asset('assets/ceralabo/img_topics/30/topics_skinwash02.png', 'user_data') }}" media="(min-width: 768px)">
+                              <source>
+                              <img src="{{ asset('assets/ceralabo/img_topics/30/topics_skinwash02_sp.png', 'user_data') }}" alt="パターン②　顔と体で使い分け"/></picture>
+                          </div>
+                          <div style="margin-top: 4rem;">
+                            <picture>
+                              <source srcset="{{ asset('assets/ceralabo/img_topics/30/topics_skinwash01.png', 'user_data') }}" media="(min-width: 768px)">
+                              <source>
+                              <img src="{{ asset('assets/ceralabo/img_topics/30/topics_skinwash01_sp.png', 'user_data') }}" alt="パターン③　大切なご家族と一緒に"/></picture>
+                          </div>
+                        </div>
+                        <div style="margin-top: 4rem;">
+                          <h2>こんな使い方もおすすめ！部分洗顔に泡タイプ</h2>
+                          <p>泡タイプはお手軽に使えるため、毛穴ケア後の部分洗顔にもおすすめです。<br>
+                            <br>
+                            セララボの毛穴ケアの方法をご紹介します。<br>
+                            <br>
+                            スキンウォッシュと同じセラヴェールシリーズの「セラヴェール プラチナムクレンジングオイル」は、肌を柔らかく整える効果に優れていることから、毛穴ケアにもおすすめです。 </p>
+                          <img src="{{ asset('assets/ceralabo/img_topics/30/topics09_01.png', 'user_data') }}" class="topics_img" alt="イメージ画像"/> 
+						  <div style="margin-top: 4rem;">
+                            <picture>
+                              <source srcset="{{ asset('assets/ceralabo/img_topics/30/topics09_04_pc.png', 'user_data') }}" media="(min-width: 768px)">
+                              <source>
+                              <img src="{{ asset('assets/ceralabo/img_topics/30/topics09_04.png', 'user_data') }}" alt="パターン③　大切なご家族と一緒に"/></picture>
+                          </div>
+                          <p>リキッドタイプは洗顔ネット等を使い、少しずつ水を加えながら泡立てる必要があるため、手間に感じてしまうこともあるかもしれません。<br>
+                            <br>
+                            泡タイプはポンプを押すだけでキメ細かい泡で出てきて、かんたんスピーディーに洗うことができます。<br>
+                            <br>
+                            部分的な毛穴ケアの場合は特に、肌に触れない程度であれば少量の泡でのW洗顔で十分の為、毎回リキッドタイプを泡立てるのが億劫になっていた方もいらっしゃるのではないでしょうか？<br>
+                            <br>
+                            そんな方はぜひ、毛穴ケア後のＷ洗顔用として、泡タイプを使ってみてください。 </p>
+                          <img src="{{ asset('assets/ceralabo/img_topics/30/img_wh.jpg', 'user_data') }}" class="topics_img" alt="イメージ画像"/> </div>
+                      </div>
+                      <div id="section05" style="margin-top: 80px;">
+                        <h1 class="topics_title">スキンウォッシュの選び方</h1>
+                        <p>これからセララボのスキンウォッシュを使ってみようと思っていただいたところで、『肌状態やお好みに合わせてアイテムを一緒に使ったり、変えていきましょう。』と言われても、いまいちピンとこないかもしれません。<br>
+                          <br>
+                          具体的なスキンウォッシュの合わせ使いの方法等については、ぜひ下記の記事を参考にしてください。 </p>
+                        <div style="margin-bottom: 80px;"> <a href="https://cores-ec.site/ceralabo/user_data/topics31">スキンウォッシュの選び方・使い分けのおすすめを詳しく見る </a> </div>
+                      </div>
+                      <div id="section06">
+                        <h1 class="topics_title">オフスキンケアで、すこやかな肌づくりを</h1>
+                        <p>オフスキンケアというスキンケア方法、そしてセラヴェールシリーズは、肌トラブルを根本原因から見直し、すこやかな肌を保てるようにと生まれました。<br>
+                          <br>
+                          セララボのロングセラーアイテムであるスキンウォッシュシリーズに、泡タイプが新たに仲間入りしたことで、これまで以上に、お一人お一人の肌悩みやライフスタイルに合わせたスキンケアを選んでいただけるようになったと考えております。<br>
+                          <br>
+                          毎日忙しいみなさんのお肌と心のすこやかさを、少しでも支えられれば幸いです。 </p>
+                        <div style="margin-bottom: 4rem;"> <a href="https://cores-ec.site/ceralabo/user_data/topics01">オフスキンケア開発秘話を詳しく見る </a> </div>
+                      </div>
+                      <p><a href="https://cores-ec.site/ceralabo/products/list?category_id=34"><img src="{{ asset('assets/ceralabo/img_topics/30/btn_ceraVeil_series.png', 'user_data') }}" alt="セラヴェールシリーズの詳細はこちら"  class="ceralabo_pc"><img src="{{ asset('assets/ceralabo/img_topics/30/btn_ceraVeil_series_sp.png', 'user_data') }}" alt="セラヴェールシリーズの詳細はこちら"  class="ceralabo_pc_none"></a></p>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{% endblock %}

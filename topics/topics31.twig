@@ -1,0 +1,672 @@
+{% extends 'default_frame.twig' %}
+
+{% block main %}
+        <div class="main_only">
+          <div class="container-fluid inner no-padding">
+            <div id="main">
+              <div class="container-fluid">
+                <div id="feature01_box__body" class="row">
+                  <div id="feature01_box__body_inner" class="col-md-10 col-md-offset-1">
+                    <style>
+								p {
+									line-height: 1.7em;
+								}
+								@media screen and (max-width: 767px) {
+			p {
+			   text-align: left;
+			}
+		}
+
+
+
+								a p {
+									color: #4D4D4D;
+								}
+
+								.topics_title {
+									
+									margin-bottom: 30px;
+								}
+
+								.img_pc {
+									width: 70%;
+									text-align: center;
+								}
+
+								.topics_img_item_pc {
+									width: 50%;
+									text-align: center;
+								}
+
+								.topics_text {
+									
+									margin: 50px 0;
+								}
+
+								.topics_text_sub {
+									text-align: justfy;
+									color: #a5a5a5;
+								}
+
+								.topics_text_item {
+									text-align: center;
+									color: #a5a5a5;
+								}
+
+
+								.under {
+									background: linear-gradient(transparent 50%, #CFDDF2 50%);
+								}
+
+								.center {
+									text-align: center;
+								}
+
+								.box19 {
+									position: relative;
+									padding: 0.25em 1em;
+									width: 350px;
+								}
+
+								.box19:before,
+								.box19:after {
+									content: '';
+									width: 20px;
+									height: 30px;
+									position: absolute;
+									display: inline-block;
+								}
+
+								.box19:before {
+									border-left: solid 1px #9fa0a0;
+									border-top: solid 1px #9fa0a0;
+									top: 0;
+									left: 0;
+								}
+
+								.box19:after {
+									border-right: solid 1px #9fa0a0;
+									border-bottom: solid 1px #9fa0a0;
+									bottom: 0;
+									right: 0;
+								}
+
+								.box19 p {
+									margin: 0;
+									padding: 0;
+								}
+
+
+								.box2 {
+									padding: 0.5em 1em;
+									margin: 2em 0;
+									font-weight: normal;
+									color: #ffffff;
+									/*文字色*/
+									background: #7A7A7A;
+									border: solid 3px #7A7A7A;
+									/*線*/
+									border-radius: 15px;
+									/*角の丸み*/
+									width: 350px;
+								}
+
+								.box2 p {
+									margin: 0;
+									padding: 5px;
+								}
+
+
+								.box_kakoi {
+									padding: 0.5em 1em;
+									margin: 2em 0;
+									border: solid 1px #bababa;
+									/*線*/
+									border-radius: 10px;
+									/*角の丸み*/
+								}
+
+								.box_kakoi p {
+									margin: 0;
+									padding: 0;
+								}
+
+								.btn-item-link {
+									display: block;
+									margin: 1em auto;
+									padding: 10px;
+									background: #4D4D4D;
+									border-radius: 50px;
+
+								}
+
+								@media screen and (min-width: 768px) {
+									.btn-item-link {
+										width: 50%;
+
+									}
+								}
+
+								.btn-item-link a {
+									color: #FFF;
+									font-weight: bold;
+									text-decoration: none;
+									text-align: center;
+								}
+								.box_chui {
+			padding: 0.5em 1em;
+			margin: 2em 0;
+			font-weight: bold;
+			border: solid 3px #ff0000;
+		}
+
+		.box_chui p {
+			margin: 0;
+			padding: 0;
+			color: #ff0000;
+		}
+
+		.box_free {
+			margin: 2em 0;
+      display: flex;
+      justify-content: center;
+		}
+
+
+		.index_pnt {
+			width: 150px;
+		}
+
+		@media screen and (max-width: 767px) {
+			.index_pnt {
+				width: 120px;
+			}
+		}
+
+		.box_pnt {
+			position: relative;
+			padding: 0.25em 1em;
+			border: solid 1px #4D4D4D;
+			padding: 30px;
+		}
+
+		.box_pnt h1 {
+			font-size: 1.4em;
+		}
+
+		@media screen and (max-width: 767px) {
+			#item_detail .freearea p {
+				margin-bottom: 40px;
+			}
+		}
+
+		.btn-item-link {
+			display: block;
+			margin: 1em auto;
+			padding: 10px;
+			background: #224F83;
+			border-radius: 50px;
+
+		}
+
+		@media screen and (min-width: 768px) {
+			.btn-item-link {
+				width: 50%;
+
+			}
+		}
+
+		.btn-item-link a {
+			color: #FFF;
+			font-weight: bold;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		ul.cp_list {
+			padding: 0.5em;
+			list-style-type: none;
+			max-width: 60rem;
+			text-align: left;
+		}
+
+		ul.cp_list li {
+			position: relative;
+            padding-left: 2.5em; /* チェックマークと番号のスペース */
+            border-bottom: solid 1px #e5e5e5;
+            margin-bottom: 0.5em;
+            line-height: 2em;
+            text-align: left; /* リストアイテムの左揃え */
+            text-indent: -2.5em; /* 1行目のインデントを消す */
+            padding-left: 3.5em; /* チェックマークと番号の幅を調整 */
+		}
+
+		ul.cp_list li:before {
+			content: "";
+			position: absolute;
+			top: .1em;
+			left: 0;
+			-webkit-transform: rotate(50deg);
+			-ms-transform: rotate(50deg);
+			transform: rotate(50deg);
+			width: 8px;
+			height: 18px;
+			border-right: 1px solid #919191;
+			border-bottom: 1px solid #919191;
+		}
+		.ul-align-center {
+			display: flex;
+			text-align: left !important; /* 強制的に左揃え */
+			flex-direction: column;
+		}
+
+		.kaihatsu .ceralabo_accordion dt a::before {
+			display: none;
+		}
+
+		.sample_button:hover {
+			opacity: 0.6;
+		}
+
+		ceralabo_accordion dt a::before {
+			display: none;
+		}
+
+
+		a[href="#faq"]:link,
+		a[href="#faq"]:visited {
+			color: #4d4d4d;
+		}
+
+		a[href="#faq"]:hover {
+			color: #9c9b9b;
+		}
+
+		a[href="#movie"]:link,
+		a[href="#movie"]:visited {
+			color: #4d4d4d;
+		}
+
+		a[href="#movie"]:hover {
+			color: #9c9b9b;
+		}
+						.topics_inner_blue {
+							background-color: #CFDDF2;
+							padding: 20px;
+							border-radius: 20px;
+max-width: 540px;
+						}
+						.topics_inner_red {
+							background-color: #F4BDBE;
+							padding: 20px;
+							border-radius: 20px;
+max-width: 540px;
+						}
+						.topics_inner_blue h2 {
+							color: #190B75;
+							font-size: 1.8em;
+						}
+						.topics_inner_red h2 {
+							color :#B90A0D;
+							font-size: 1.8em;
+						}
+						.topics_flex {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						.topics_flex_img1 {
+							flex: 1
+						}
+						.topics_flex_img2 {
+							width: 50%;
+						}
+						@media screen and (min-width: 768px) {
+.img-item-link {
+    width: 50%;
+}
+						}
+						
+						/* 追加CSS */
+							.ceralabo_ol{
+                            margin-bottom: 100px;
+							text-align: left;
+							border: double 3px #4D4D4D;
+                            /*二重線 太さ 色*/
+                            padding: 20px;
+                        }
+						.ceralabo_ol h2 {
+							margin: 0;
+							font-size: 1.6rem;
+						}
+
+                        .ceralabo_ol ol li {
+                            line-height: 1.5;
+                            padding: 5px 0;
+                        }
+
+                        .ceralabo_ol ol li a {
+                            text-decoration-line: none;
+							color: #4D4D4D;
+                        }
+
+							.ceralabo_ol_sub ol {
+                            padding: 10px;
+                        }
+						
+						.topics_img {
+							width: 100%;
+						}
+						
+						.topics_accordion {
+							max-width: 640px;
+						}
+						
+						.topics_accordion dd {
+							text-align: justify;
+						}
+						.user_data .ceralabo_pc {
+    display: none !important;
+}
+						
+						@media screen and (min-width: 768px) {
+.topics_img {
+    width: 70%;
+	margin:0 auto;
+}
+							#section02 .topics_img {
+								width: 36%;
+								margin:0 auto;
+							}
+							
+							.user_data .ceralabo_pc_none {
+        display: none !important;
+    }
+							.user_data .ceralabo_pc {
+    display: block!important;
+}
+						}
+						{# 目次改行のためのCSS #}
+						@media screen and (max-width: 767px) {
+                             .ceralabo_ol ol li {
+                                 text-indent: -20px; /* リストマーカーを削除するための負のインデント */
+                                 padding-left: 20px; /* テキストのインデント */
+                              }
+  
+                            .ceralabo_ol ol li::marker {
+                                 content: ''; /* リストマーカーを隠す */
+                              }
+
+                            .ceralabo_ol ol li a {
+                                 display: inline-block;
+                                 margin-left: 20px; /* テキストのインデント（必要に応じて調整） */
+                              }
+                            }
+							</style>
+                    <div>
+                      <h1 class="topics_title"> スキンウォッシュの選び方・使い分けのおすすめ</h1>
+                    </div>
+                    <!-------------------------- ▼▼▼▼コンテンツ▼▼▼▼ ------------------------------------>
+                    <div style="margin-bottom:100px;">
+                      <p class="topics_text"> こちらの記事では、肌状態に合わせたセラヴェールスキンウォッシュの選び方・使い分け方をご紹介しています。<br>
+                        <br>
+                        これからオフスキンケアを始める方はぜひご覧ください。<br>
+                        <br>
+                        季節に合わせた使い分け方のおすすめなども記事の最後に記載していますので、ぜひ参考にしてください。</p>
+                      <div class="ceralabo_ol">
+                        <h2>目次</h2>
+                        <ol>
+                          <li><a href="#section01">1.	スキンウォッシュの基本の選び方</a></li>
+                          <li><a href="#section02">2.	「洗浄格差」とは？ オフスキンケアでつまづきやすいポイント</a></li>
+                          <li><a href="#section03">3.	スキンウォッシュシリーズの洗浄力イメージ</a></li>
+                          <li><a href="#section04">4.	初めてスキンウォッシュを使うときのコツ</a></li>
+                          <li><a href="#section05">5.	使い続けることで起きる変化に合わせたスキンウォッシュの変更の仕方</a></li>
+                          <li><a href="#section05_1">└インデュースを使って乾燥するようになってきた</a></li>
+                          <li><a href="#section05_2">└べたつきやテカリが気になるようになった</a></li>
+                          <li><a href="#section05_3">└ニキビができやすくなった</a></li>
+                          <li><a href="#section05_4">└インデュースの洗浄力では物足りない、洗い上がりがすっきりしない</a></li>
+                          <li><a href="#section06">6.	「私の肌って変？」インデュースを使い続けているのに乾燥を感じない</a></li>
+                          <li><a href="#section07">7.	スキンウォッシュの使い分け　～応用編～</a></li>
+                        </ol>
+                      </div>
+                      <p>セララボのスキンケアアイテムをご使用いただく前に、「オフスキンケア」の考え方についてご理解いただくと、スムーズにすこやかな肌づくりを進めることができるでしょう。</p>
+                      <p><a href="https://cores-ec.site/ceralabo/user_data/topics07">オフスキンケアの詳細はこちら</a></p>
+                      <div id="section01">
+                        <h1 class="topics_title">スキンウォッシュの基本の選び方</h1>
+                        <p>基本的にオフスキンケアを始める際は、「インデュース」から試していただくことをおすすめしています。 </p>
+                        <p><a href="https://cores-ec.site/ceralabo/user_data/topics30">スキンウォッシュシリーズの紹介はこちら</a></p>
+                        <picture>
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash10.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash10_sp.png', 'user_data') }}" alt="イメージ画像"/></picture>
+                      <div id="section03">
+                        <h1 class="topics_title">スキンウォッシュシリーズの洗浄力イメージ</h1>
+                        <p>下の図のように、洗浄成分には様々な種類と段階があります。</p>
+                        <!-------------------------- ▼▼▼▼画像▼▼▼▼ -------------------------->
+                        <div style="margin-bottom:50px;">
+						<picture>
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/31/wh_chart.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/31/wh_chart_sp.png', 'user_data') }}" alt="スキンウォッシュシリーズ洗浄力イメージ"/>
+						</picture>
+						</div>
+                        <!-------------------------- ▲▲▲▲画像▲▲▲▲ -------------------------->
+                        <p> 現在石けんなどの洗浄力の高めな洗浄剤を使っている方は、急に洗浄力のマイルドな洗浄料に変更するのではなく、優しい洗浄力に肌を慣れさせていくことが重要です。<br>
+                          <br>
+                          現在お使いの洗顔・ボディーソープの成分表記を確認して、洗浄力を少し下げた洗浄料を選べるとよいのですが、成分表記を読み解くのは難しいですよね。<br>
+                          <br>
+                          そこで、セララボの中では標準的な洗浄力に設計している「インデュース」が、初めての方にはおすすめなのです。<br>
+                          <br>
+                          <span class="under">迷ったり、わからなかったら、まずは「インデュース」！</span><br>
+                          <br>
+                          それでもやっぱり、「私にはどの洗浄力が合っているのかわからない」「お試ししてみたい」という方は、セラヴェールシリーズをお試しできるウォッシュケアトライアルセットからお試しください。 </p>
+                        <p><a href="https://cores-ec.site/ceralabo/products/detail/1116">ウォッシュケアトライアルセットの詳細はこちら</a><br><br></p>
+                        <p>中には、「自分は乾燥肌だから、エクストラがいいかもしれない」と思った方もいるかもしれません。
+                          エクストラは、スキンウォッシュシリーズの中で最も洗浄力がマイルドで、乾燥肌の方にも使いやすい洗浄力となっています。<br>
+                          <br>
+                          しかしながら、オフスキンケアをこれから始める場合、<span class="under">「洗浄格差」による肌トラブルを起こしにくくする</span>ため、あえて中間の洗浄力であるインデュースから始めていただくことをおすすめしています。 </p>
+                      </div>
+                      <div id="section02">
+                        <h1 class="topics_title">「洗浄格差」とは？ オフスキンケアで躓きやすいポイント</h1>
+                        <p>洗浄格差による肌の変化で、オフスキンケアを挫折してしまう方もいらっしゃいます。<br>
+                          <br>
+                          オフスキンケアを成功させるポイントは、ゆっくり肌を慣らしていく「洗浄力のステップ」です。 </p>
+                        <img src="{{ asset('assets/ceralabo/img_topics/31/image3.png', 'user_data') }}" class="topics_img" alt="洗浄力格差の概念図"> </div>
+                      <div id="section04">
+                        <h1 class="topics_title">洗顔料を変えるときのコツ</h1>
+                        <p>「洗浄料を変える」ということは意外と難しいことなんだ、と感じられた方もいるかもしれません。<br>
+                          <br>
+                          大切なのは、<span class="under">急に洗浄力を変えないこと</span>です。<br>
+                          <br>
+                          スキンウォッシュを使い始める際に、さらに洗浄格差による肌荒れを起こしにくくする使い方の工夫があります。<br>
+                          <br>
+                          その工夫とは、元から使っていたアイテムと、新しく使うアイテムを交互に使い、少しずつ肌を慣れさせていくことです。 </p>
+                          <div style="margin: 4rem auto;">
+                          <picture>
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash04.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash04_sp.png', 'user_data') }}" alt="イメージ画像"/></picture>
+                        </div> 
+        
+                        <p><span class="under">オフスキンケアには「時間」が必要です。</span><br>
+                          スキンケアを変えたからといって、肌のうれしい変化がすぐに起きることは、ほとんどありません。<br>
+                          <br>
+                          まずは2ヶ月、オフスキンケアを続けてみてください。<br>
+                          早い方であれば、肌の調子が良いと感じることができるかもしれません。<br>
+                          <br>
+                          また、洗浄アイテム・保湿アイテムにかかわらず、スキンケアアイテムを変更する際は、1アイテムずつ変更していきましょう。
+                          そうすれば、スキンケアを変えたことで肌トラブルが起きた場合に、どのアイテムが肌に合わなかったのかがわかりやすくなります。 </p>
+                      </div>
+                      <div id="section05">
+                        <h1 class="topics_title">肌状態に合わせた洗浄力の変更の仕方</h1>
+                        <p>数週間～数か月ほどオフスキンケアを続けていると、肌にこんな変化を感じることがあります。 </p>
+                        <div class="box_free">
+                          <ul class="cp_list left">
+                            <li>①　インデュースの洗浄力では物足りない、洗い上がりがすっきりしない</li>
+                            <li>②　乾燥を感じるようになってきた</li>
+                            <li>③　皮脂の分泌が増えてべたつきやテカリが気になるようになった</li>
+                            <li>④　ニキビができやすくなった</li>
+                          </ul>
+                        </div>
+                        <div id="section05_4">
+                          <h2>《インデュースの洗浄力では物足りない、洗い上がりがすっきりしない》</h2>
+                          <p>「無事インデュースに変更できたけど、なんだか洗い上がりのぬるつきが気になる」という方も中にはいらっしゃいます。<br>
+                            <br>
+                            人によって感じるこの「ぬるつき」は、インデュースの洗浄成分の性質上のものです。<br>
+                            <br>
+                            特に元々石けんを使用していた方は、さっぱりとした洗い上がりに慣れていたことで、インデュースの洗い心地にはなかなか慣れないという方もいらっしゃると思います。<br>
+                            <br>
+                            しばらく使い続けると慣れてくるとは思いますが、毎日この使用感のまま続けるのは厳しいという場合は、無理をせずに「クリアリー」に変更したり、併用してみましょう。<br><br> </p>
+                        </div>
+                        <div id="section05_1">
+                          <h2>《乾燥を感じるようになってきた》</h2>
+                          <p>これは肌トラブルではなく、オフスキンケアを進めていく中での好ましい肌の変化である可能性が高いと考えられます。<br>
+                            <br>
+                            そんな時は、一段階洗浄力を低いものに変更してみましょう。<br>
+                            <br>
+                            現在インデュースを使っている場合は、エクストラを試してみてください。<br>
+                            <br>
+                            洗浄料の変更により肌トラブルを起こさないよう、下記の図のように徐々に変更してくださいね。 </p>
+                             <div style="margin: 4rem auto;">
+                          <picture>
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash04.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash04_sp.png', 'user_data') }}" alt="イメージ画像"/></picture>
+                        </div>
+                         
+                          <p>エクストラへ変更した後も乾燥が気になる場合は、保湿が足りていないのかもしれません。<br>
+                            <br>
+                            セラミドや油分を補給をして、乾燥しにくいすこやかな肌を保ちましょう。 </p>
+                          <p>セラミド補給におすすめのアイテム</p>
+                         
+                          <div class="box_free"> <img src="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash05.png', 'user_data') }}" class="ceralabo_pc" alt="購入はこちら" usemap="#ImageMap01"> <img src="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash05_sp.png', 'user_data') }}" class="ceralabo_pc_none" alt="購入はこちら" usemap="#ImageMap02"> </div>	 
+                          <!----------------------- ▼▼ImageMap Sample Start▼▼ ---------------------------->
+                          <map name="ImageMap01">
+                            <area shape="rect" coords="685,47,1530,1270" href="https://cores-ec.site/ceralabo/products/detail/177" alt="セラキュラローション">
+                            <area shape="rect" coords="1689,44,2534,1264" href="https://cores-ec.site/ceralabo/products/detail/179" alt="セラキュラエッセンス">
+                          </map>
+							<map name="ImageMap02">
+                            <area shape="rect" coords="28,1072,744,22" href="https://cores-ec.site/ceralabo/products/detail/177" alt="セラキュラローション">
+                            <area shape="rect" coords="881,1074,1607,17" href="https://cores-ec.site/ceralabo/products/detail/179" alt="セラキュラエッセンス">
+                          </map>
+                          <style>
+area{
+border:none;
+outline:none;
+}
+</style>
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script> 
+                          <script>
+    $('img[usemap]').rwdImageMaps();
+</script> 
+                          <!----------------------- ▲▲ImageMap Sample End▲▲ ----------------------------> 
+                        </div>
+                        <div id="section05_2">
+                          <h2>《べたつきやテカリが気になるようになった》</h2>
+                          <p>洗浄料を変えたら日中べたつきが気になるようになったという方は、洗浄力が足りていない可能性が考えられるため、洗浄力を一段階上げてみるのがいいかもしれません。<br>
+                            <br>
+                            また、いつもの保湿だとべたつきやテカリが気になるといった状態の場合は、「洗浄力がマイルドすぎたのかな？」と考えるかもしれませんが、少しずつ保湿を減らしてみましょう。<br><br> </p>
+                        </div>
+                        <div id="section05_3">
+                          <h2>《ニキビができやすくなった》</h2>
+                          <p>元から使用していた洗浄料から徐々にインデュースに変更したうえで、ニキビができやすくなってしまった場合は、選んだ洗浄料そのものの洗浄力が肌に合っていない可能性が考えられます。<br>
+                            <br>
+                            そのような場合は、洗浄力を一段階高いものに変更してみてください。<br>
+                            <br>
+                            なお、ニキビなどの肌トラブルが起きる原因は様々で、スキンケアだけが原因ではない場合もあります。<br>
+                            状況に応じて皮膚科医にご相談ください。<br><br> </p>
+                        </div>
+                      </div>
+                      <div id="section06">
+                        <h1 class="topics_title">肌状態に合わせたスキンウォッシュの併用の仕方</h1>
+                        <p>スキンウォッシュを併用する場合は、ご自身の肌の調子とお好みの使い心地を考慮して、ちょうどいい頻度・使い分けを探してみてください。<br>
+                          <br>
+                          例えば・・・ </p>
+                           <div style="margin: 4rem auto;">
+                          <picture>
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash06.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash06_sp.png', 'user_data') }}" alt="イメージ画像"/></picture>
+                        </div>
+                    
+                        <p>インデュースの洗い上がりに慣れなくて困っている場合におすすめの方法をご紹介しましたが、ここで一つ疑問が思い浮かんだ方もいらっしゃるかもしれません。</p>
+                        <img src="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash07.png', 'user_data') }}" class="topics_img" alt="イメージ画像" style="margin-bottom:2rem;">
+                        <p>乾燥を感じている状態であれば、洗浄力を徐々に下げていく方が好ましい場合が多いですが、どれくらいの洗浄力が合うかは人によって異なります。<br>
+                          <br>
+                          無理をして肌に合わない洗浄料を使ったり使い心地が苦手な洗浄料を使うと、長く続けることは難しいですよね。<br>
+                          オフスキンケアは長く続けることが重要なスキンケア方法なので、ご自身の気持ちに寄り添って、「肌に合ったスキンケア」と、「毎日気持ちよくできるスキンケア」のちょうどよいバランスを考えて行ってみてください。 </p>
+                      </div>
+                      <div id="section07">
+                        <h1 class="topics_title">スキンウォッシュの使い分け　～応用編～</h1>
+                        <p>オフスキンケアに慣れてきたら、肌状態や季節に合わせてアイテムを使い分けることが、さらに気持ちよくスキンケアできるコツでもあるのです。</p>
+                        <h2>《べたつきやすい時期に！夏はあえて洗浄力を上げてみるのもおすすめ》</h2>
+                        <p>べたつく夏は、さらっと快適に過ごしたいですよね。<br>
+                          <br>
+                          肌状態にはそこまで大きな変化はないけれど、さっぱりしたい気分。<br>
+                          そんなときは、洗浄力を1段階上げてみるのもおすすめです。 </p>
+                           <div style="margin: 4rem auto;">
+                          <picture>
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash08.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash08_sp.png', 'user_data') }}" alt="イメージ画像"/></picture>
+                        </div>
+                    
+                        <h2>《”混合肌”の方必見！洗顔料の部分使い》</h2>
+                        <p>いわゆる”混合肌”と呼ばれる、Tゾーンなどのべたつき・テカりやすい部分と、頬などの乾燥しやすい部分がある肌質の方は、保湿アイテムを部分使いすることもあるかと思います。<br>
+                          <br>
+                          それと同様に、洗浄料を部分使いすることもできるのです。<br>
+                          <br>
+                          使い分け方としては、頬や口周りのいわゆるUゾーンに合わせて選ぶのがおすすめです。<br>
+                          <br>
+                          Uゾーンの洗浄はインデュースがちょうどよいという場合、Tゾーンは1段階上のクリアリーがおすすめです。<br>
+                          <br>
+                          Uゾーンの洗浄はエクストラがちょうどよいという場合、Tゾーンは1段階上のインデュースがおすすめです。<br>
+                          <br>
+                          また、部分使いには泡タイプの方がかんたんでおすすめです。 </p>
+                           <div style="margin: 4rem auto;">
+                          <picture>
+                            <source srcset="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash09.png', 'user_data') }}" media="(min-width: 768px)">
+                            <source>
+                            <img src="{{ asset('assets/ceralabo/img_topics/31/topics_skinwash09_sp.png', 'user_data') }}" alt="イメージ画像"/></picture>
+                        </div>
+            
+                        <p>スキンケア方法は自由なものなので、例えばUゾーンにはエクストラを使い、Tゾーンはクリアリーを使ってみてもよい場合もあります。<br>
+                          肌状態に合わせて試してみてくださいね。 </p>
+						  <p><a href="https://cores-ec.site/ceralabo/products/list?category_id=34"><img src="{{ asset('assets/ceralabo/img_topics/31/btn_ceraVeil_series.png', 'user_data') }}" alt="セラヴェールシリーズの詳細はこちら"  class="ceralabo_pc"><img src="{{ asset('assets/ceralabo/img_topics/31/btn_ceraVeil_series_sp.png', 'user_data') }}" alt="セラヴェールシリーズの詳細はこちら"  class="ceralabo_pc_none"></a></p>
+                      </div>
+                    </div>
+                    <!-------------------------- ▲▲▲▲コンテンツ▲▲▲▲ ------------------------------------> 
+                    <!-------------------------- ▼▼▼▼動画▼▼▼▼ ------------------------------------>
+                    <div id="movie" class="iframe-wrapper" style="margin-bottom: 100px;">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/c6jZRMHXd5Q?si=72pXoGVYfQRrCf-L" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <style>
+    .iframe-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* アスペクト比16:9の場合 */
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        /* YouTubeの下に余白をつける */
+    }
+
+    .iframe-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+                    <!------------------------------------ ▲▲▲▲動画▲▲▲▲ ------------------------------------> 
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{% endblock %}

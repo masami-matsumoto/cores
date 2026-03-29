@@ -1,0 +1,433 @@
+{% extends 'default_frame.twig' %}
+
+{% block main %}
+        <div class="main_only">
+          <div class="container-fluid inner no-padding">
+            <div id="main">
+              <div class="container-fluid">
+                <div id="feature01_box__body" class="row">
+                  <div id="feature01_box__body_inner" class="col-md-10 col-md-offset-1">
+                    <style>
+								p {
+									line-height: 1.7em;
+								}
+								@media screen and (max-width: 767px) {
+			p {
+			   text-align: left;
+			}
+		}
+
+
+
+								a p {
+									color: #4D4D4D;
+								}
+
+								.topics_title {
+									text-align: center;
+									margin-bottom: 30px;
+								}
+
+								.img_pc {
+									width: 70%;
+									text-align: center;
+								}
+
+								.topics_img_item_pc {
+									width: 50%;
+									text-align: center;
+								}
+
+								.topics_text {
+									text-align: left;
+									margin: 50px 0;
+								}
+
+								.topics_text_sub {
+									text-align: justfy;
+									color: #a5a5a5;
+								}
+
+								.topics_text_item {
+									text-align: center;
+									color: #a5a5a5;
+								}
+
+
+								.under {
+									background: linear-gradient(transparent 50%, #CFDDF2 50%);
+								}
+
+								.center {
+									text-align: center;
+								}
+
+								.box19 {
+									position: relative;
+									padding: 0.25em 1em;
+									width: 350px;
+								}
+
+								.box19:before,
+								.box19:after {
+									content: '';
+									width: 20px;
+									height: 30px;
+									position: absolute;
+									display: inline-block;
+								}
+
+								.box19:before {
+									border-left: solid 1px #9fa0a0;
+									border-top: solid 1px #9fa0a0;
+									top: 0;
+									left: 0;
+								}
+
+								.box19:after {
+									border-right: solid 1px #9fa0a0;
+									border-bottom: solid 1px #9fa0a0;
+									bottom: 0;
+									right: 0;
+								}
+
+								.box19 p {
+									margin: 0;
+									padding: 0;
+								}
+
+
+								.box2 {
+									padding: 0.5em 1em;
+									margin: 2em 0;
+									font-weight: normal;
+									color: #ffffff;
+									/*文字色*/
+									background: #7A7A7A;
+									border: solid 3px #7A7A7A;
+									/*線*/
+									border-radius: 15px;
+									/*角の丸み*/
+									width: 350px;
+								}
+
+								.box2 p {
+									margin: 0;
+									padding: 5px;
+								}
+
+
+								.box_kakoi {
+									padding: 0.5em 1em;
+									margin: 2em 0;
+									border: solid 1px #bababa;
+									/*線*/
+									border-radius: 10px;
+									/*角の丸み*/
+								}
+
+								.box_kakoi p {
+									margin: 0;
+									padding: 0;
+								}
+
+								.btn-item-link {
+									display: block;
+									margin: 1em auto;
+									padding: 10px;
+									background: #4D4D4D;
+									border-radius: 50px;
+									text-align: center;
+
+								}
+
+								@media screen and (min-width: 768px) {
+									.btn-item-link {
+										width: 50%;
+
+									}
+								}
+
+								.btn-item-link a {
+									color: #FFF;
+									font-weight: bold;
+									text-decoration: none;
+									text-align: center;
+								}
+								.box_chui {
+			padding: 0.5em 1em;
+			margin: 2em 0;
+			font-weight: bold;
+			border: solid 3px #ff0000;
+		}
+
+		.box_chui p {
+			margin: 0;
+			padding: 0;
+			color: #ff0000;
+		}
+
+		.box_free {
+			margin: 4em 0;
+		}
+
+
+		.index_pnt {
+			width: 150px;
+		}
+
+		@media screen and (max-width: 767px) {
+			.index_pnt {
+				width: 120px;
+			}
+		}
+
+		.box_pnt {
+			position: relative;
+			padding: 0.25em 1em;
+			border: solid 1px #4D4D4D;
+			padding: 30px;
+		}
+
+		.box_pnt h1 {
+			font-size: 1.4em;
+		}
+
+		@media screen and (max-width: 767px) {
+			#item_detail .freearea p {
+				margin-bottom: 1rem;
+			}
+		}
+
+		.btn-item-link {
+			display: block;
+			margin: 1em auto;
+			padding: 10px;
+			background: #224F83;
+			border-radius: 50px;
+
+		}
+
+		@media screen and (min-width: 768px) {
+			.btn-item-link {
+				width: 50%;
+
+			}
+		}
+
+		.btn-item-link a {
+			color: #FFF;
+			font-weight: bold;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		ul.cp_list {
+			padding: 0.5em;
+			list-style-type: none;
+			text-align: left;
+		}
+
+		ul.cp_list li {
+			position: relative;
+			padding-left: 25px;
+			border-bottom: solid 1px #e5e5e5;
+			margin-bottom: 0.5em;
+			line-height: 2em;
+		}
+
+		ul.cp_list li:before {
+			content: "";
+			position: absolute;
+			top: .1em;
+			left: 0;
+			-webkit-transform: rotate(50deg);
+			-ms-transform: rotate(50deg);
+			transform: rotate(50deg);
+			width: 8px;
+			height: 18px;
+			border-right: 1px solid #919191;
+			border-bottom: 1px solid #919191;
+		}
+
+
+		.ul-align-center {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.kaihatsu .ceralabo_accordion dt a::before {
+			display: none;
+		}
+
+		.sample_button:hover {
+			opacity: 0.6;
+		}
+
+		.ceralabo_accordion dt a::before {
+			display: none;
+		}
+
+
+		a[href="#faq"]:link,
+		a[href="#faq"]:visited {
+			color: #4d4d4d;
+		}
+
+		a[href="#faq"]:hover {
+			color: #9c9b9b;
+		}
+
+		a[href="#movie"]:link,
+		a[href="#movie"]:visited {
+			color: #4d4d4d;
+		}
+
+		a[href="#movie"]:hover {
+			color: #9c9b9b;
+		}
+						.topics_inner_blue {
+							background-color: #CFDDF2;
+							padding: 20px;
+							border-radius: 20px;
+max-width: 540px;
+						}
+						.topics_inner_red {
+							background-color: #F4BDBE;
+							padding: 20px;
+							border-radius: 20px;
+max-width: 540px;
+						}
+						.topics_inner_blue h2 {
+							color: #190B75;
+							font-size: 1.8em;
+						}
+						.topics_inner_red h2 {
+							color :#B90A0D;
+							font-size: 1.8em;
+						}
+						.topics_flex {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						.topics_flex_img1 {
+							flex: 1
+						}
+						.topics_flex_img2 {
+							width: 50%;
+						}
+						@media screen and (min-width: 768px) {
+.img-item-link {
+    width: 50%;
+}
+						}
+						 /* 追加CSS */
+						.ceralabo_ol{
+                            margin-bottom: 100px;
+							text-align: left;
+							border: double 3px #4D4D4D;
+                            /*二重線 太さ 色*/
+                            padding: 20px;
+                        }
+						
+						.ceralabo_ol h2 {
+							margin: 0;
+							font-size: 1.6rem;
+						}
+
+                        .ceralabo_ol ol li {
+                            line-height: 1.5;
+                            padding: 5px 0;
+                        }
+
+                        .ceralabo_ol ol li a {
+                            text-decoration-line: none;
+							color: #4D4D4D;
+                        }
+
+							.ceralabo_ol_sub ol {
+                            padding: 10px;
+                        }
+						
+						.topics_img {
+							width: 100%;
+						}
+						
+						.topics_accordion {
+							max-width: 640px;
+						}
+						
+						.topics_accordion dd {
+							text-align: justify;
+						}
+						.topics_sns {
+							margin: 4rem 0 1rem;
+						}
+						
+						 .user_data h2 {
+    font-size: 24px;
+}
+						@media screen and (min-width: 768px) {
+.topics_img {
+    width: 70%;
+}
+							#item_detail .freearea p {
+				margin-bottom: 1rem;
+			}
+							.topics_img-sns {
+								width: 30%;
+							}
+						}
+							</style>
+                    <center>
+                      <h1 class="topics_title">What is CeraLabo？</h1>
+                    </center>
+                    
+                    <!-------------------------- ▼▼▼▼画像▼▼▼▼ -------------------------->
+                    <center style="margin-bottom:50px;">
+                      <img src="/html/user_data/assets/ceralabo/img_topics/what_ceralabo/inbound.jpg" class="topics_img" alt="">
+                    </center>
+					<center style="margin-bottom:50px;">
+                      <img src="/html/user_data/assets/ceralabo/img_topics/what_ceralabo/bn_ceralabo.png" class="topics_img" alt="">
+                    </center>
+                    <!-------------------------- ▲▲▲▲画像▲▲▲▲ --------------------------> 
+                    <!-------------------------- ▼▼▼▼コンテンツ▼▼▼▼ ------------------------------------>
+                    <div style="margin-bottom:100px;">
+                      <h2></h2>
+                      <p class="topics_text">セララボは、日本で人気の美容系インフルエンサー“かずのすけ”がブランドプロデューサーを務める敏感肌向けスキンケアブランドです。<br>
+                        セララボは、バリア機能を整えることが重要だと考えています。適切な洗顔とセラミド補給による保湿を基本のコンセプトにしています。<br>
+                        セララボでは、厳選した成分で機能性に特化したシンプルなアイテムを揃えています。</p>
+                      <h3>English</h3>
+                      <p>The brand CeraLabo, led by popular Japanese beauty influencer Kazunosuke, specializes in skincare products tailored for sensitive skin.<br>
+                        CeraLabo believes that it is important to improve the skin's barrier function. We focus on proper cleansing and moisturizing through ceramide replenishment as our basic concept.<br>
+                        At CeraLabo, we offer simple items with functional ingredients carefully selected for their effectiveness.</p>
+                      <h3>中文</h3>
+                      <p>CeraLabo是一个针对敏感肌肤的护肤品牌，由日本受欢迎的美容KOL“Kazunosuke”担任品牌制作人。<br>
+                        CeraLabo认为，保持皮肤屏障功能的平衡至关重要。<br>
+                        其基本概念是通过适当的洁面和补充神经酰胺来保湿。<br>
+                        CeraLabo精选成分，提供功能性强且简单的护肤产品。</p>
+                      <h3>한국어</h3>
+                      <p>CeraLabo(세라랩)는 일본의 인기 뷰티 인플루언서 '카즈노스케'가 제작한 민감성 피부를 위한 스킨케어 브랜드다.<br>
+                        세라랩은 피부 장벽 기능을 균형 있게 유지하는 것이 중요하다고 생각한다.<br>
+                        기본 콘셉트는 올바른 세안과 세라마이드 보충을 통한 보습이다.<br>
+                        세라랩은 엄선된 원료를 사용해 기능적이면서도 심플한 스킨케어 제품을 제공하고 있다.</p>
+                      <div class="topics_sns">
+                        <p class="topics_text-link">Kazunosuke Youtube</p>
+                        <a href="https://www.youtube.com/@kazunosuke" target="_blank"><img src="/html/user_data/assets/ceralabo/img_topics/what_ceralabo/btn_what_youtube.png" class="topics_img-sns" alt=""/></a></div>
+                      <div class="topics_sns">
+                        <p class="topics_text-link">Kazunosuke X</p>
+                        <a href="https://x.com/kazunosuke13?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="/html/user_data/assets/ceralabo/img_topics/what_ceralabo/btn_what_x.png" class="topics_img-sns" alt=""/></a></div>
+                      {# <div class="btn-item-link" style="margin: 80px auto;"> <a href="https://cores-ec.site/ceralabo/products/detail/195"> ご購入はこちら（WC商品ページ） </a> </div> #}
+                    </div>
+                    <!-------------------------- ▲▲▲▲コンテンツ▲▲▲▲ ------------------------------------> 
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{% endblock %}
